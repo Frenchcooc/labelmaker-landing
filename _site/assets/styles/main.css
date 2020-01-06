@@ -1,0 +1,136 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+head,
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+section {
+  padding: 3em 0 3em 0;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color:black;
+}
+
+.btn{ 
+  font-weight: 400;
+}
+
+/* --- Hero section --- */
+h1#proposition-value {
+  font-size:3em;
+  font-weight: 300;
+  color:white;
+  padding-top:1em;
+}
+
+p#tagline {
+  font-size:1.2em;
+  font-weight: 300;
+  color:white;
+}
+
+/* --- sections --- */
+
+h2.heading {
+  font-size:2.7em;
+  font-weight: 300;
+  color:#4c4c4c;
+}
+
+P.subheading {
+  font-size: 1.2em;
+  color:#555;
+}
+
+.lightgray {
+  background-color:#f5f6fa;
+}
+
+
+/* --- nav ---- */
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .nav-link {
+    transition: all 0.1s cubic-bezier(0, 0, 0.2, 1);
+    letter-spacing: 0.04em;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    /* color: #1b1240;
+    font-weight: 600;
+    font-size: 0.9em; */
+  }
+  
+  .nav-link:hover {
+    /* color: #ff486a !important; */
+  }
+  
+  .navbar-toggler:hover,
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .navbar-shadow {
+    box-shadow: -2px -4px 20px 0px rgba(32, 41, 50, 0.12);
+  }
+  
+  
+  /* navbar toggler  */
+  
+  .icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #b6b6b6;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px;
+  }
+  
+  /*navbar toggler*/
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+  
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+  
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+  
