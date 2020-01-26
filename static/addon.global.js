@@ -1,8 +1,43 @@
 /**
- * Looking for a new indie project? <(^_^)>
- * Let's talk! Shoot me an email to: frenchcooc [at] gmail.com
+ * Polyfill for Element.closest()
+ * see: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
  */
 
+if (!Element.prototype.matches) {
+  Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector
+}
+
+if (!Element.prototype.closest) {
+  Element.prototype.closest = function(s) {
+    var el = this
+
+    do {
+      if (el.matches(s)) return el
+      el = el.parentElement || el.parentNode
+    } while (el !== null && el.nodeType === 1)
+    return null
+  }
+}
+
+document.addEventListener('click', function(event) {
+  var element = event.target || event.srcElement
+
+  if (!element.closest || !SheetApp.isAutocompleteActive) {
+    return
+  }
+
+  var closest = element.closest('.autocomplete')
+  if (!closest) {
+    SheetApp.hideAutocomplete()
+  }
+})
+
+/**
+ * Labels names (names only, sizes are backend-only)
+ *
+ * PS: Looking for a new indie project? <(^_^)>
+ * Let's talk first! Shoot me an email: frenchcooc [at] gmail.com
+ */
 ;(function(manufacturers, labels) {
   window._storage = {
     TOP_LABELS: [],
