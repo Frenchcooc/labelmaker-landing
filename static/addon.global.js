@@ -3,11 +3,11 @@
  * see: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
  */
 
-if (!Element.prototype.matches) {
+if (Element && !Element.prototype.matches) {
   Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector
 }
 
-if (!Element.prototype.closest) {
+if (Element && !Element.prototype.closest) {
   Element.prototype.closest = function(s) {
     var el = this
 
@@ -22,7 +22,7 @@ if (!Element.prototype.closest) {
 document.addEventListener('click', function(event) {
   var element = event.target || event.srcElement
 
-  if (!element.closest || !SheetApp.isAutocompleteActive) {
+  if (!element.closest || !SheetApp || !SheetApp.isAutocompleteActive) {
     return
   }
 
