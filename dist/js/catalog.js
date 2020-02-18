@@ -5,29 +5,27 @@
  * Let's talk first! Shoot me an email: frenchcooc [at] gmail.com
  */
 (function(manufacturers, labels) {
-  window._storage = {
-    TOP_LABELS: [],
-    ALL_LABELS: []
+  window._catalog = {
+    allLabels: labels,
+    allManufacturers: manufacturers,
+    allLabelsByManufacturers: {}
   };
 
-  for (var j = 0, o = labels.length; j < o; j++) {
-    var label = labels[j];
+  for (var i = 0, n = labels.length; i < n; i++) {
+    var label = labels[i];
+    var manufacturer = manufacturers[label[0]] || "_";
+    var product = label[1];
 
-    var id = label[0];
-    var prefix = id.substr(0, 3);
-    var manufacturer = manufacturers[prefix] || "";
-
-    label[1] = manufacturer + " - " + label[1];
-    window._storage.ALL_LABELS.push(label);
-
-    if (label.length > 2) {
-      window._storage.TOP_LABELS.push(label);
+    if (!window._catalog.allLabelsByManufacturers[manufacturer]) {
+      window._catalog.allLabelsByManufacturers[manufacturer] = [];
     }
+
+    window._catalog.allLabelsByManufacturers[manufacturer].push(product);
   }
 })(
   {
-    AA4: "Avery A4",
-    AUS: "Avery US Letter"
+    AUS: "Avery US Letter",
+    AA4: "Avery A4"
   },
   [
     ["AUS", "5160 Easy Peel ® Address Labels"],
