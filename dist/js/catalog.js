@@ -26,7 +26,7 @@
   {
     AUS: "Avery US Letter",
     AA4: "Avery A4",
-    AA4: "Avery 4R Photo Size"
+    A4R: "Avery 4R Photo Size"
   },
   [
     ["AUS", "5160 Easy Peel ® Address Labels"],
