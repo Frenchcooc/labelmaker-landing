@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  padding: 3em 0 3em 0;
+  padding: 2em 0 2em 0;
 }
 
 a, a:hover, a:active {
@@ -36,11 +36,7 @@ h1#proposition-value {
   font-size:3em;
   font-weight: 800;
   padding-top:1em;
-}
-
-p#tagline {
-  font-size:1.2em;
-  font-weight: 600;
+  color:#4c4c4c;
 }
 
 /* --- sections --- */
@@ -51,13 +47,9 @@ h2.heading {
   color:#4c4c4c;
 }
 
-P.subheading {
+p.subheading {
   font-size: 1.2em;
-  color:#555;
-}
-
-.lightgray {
-  background-color:#f5f6fa;
+  color:#4c4c4c;
 }
 
 
