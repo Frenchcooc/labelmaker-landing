@@ -10,7 +10,7 @@ body {
 
 head,
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 section {
@@ -232,6 +232,10 @@ p.subheading {
   padding: 1em 1em 0 1em;
 }
 
+.pricing-card-cta {
+  padding: 0em 1em 0 1em;
+}
+
 .pricingcard button,
 .pricingcard button.btn-outline {
   width: 100%;
@@ -263,4 +267,20 @@ sup {
   border-bottom-right-radius: 4px;
   padding: 0.3em 0.65em 0.02em;
   background: #007bff;
+}
+
+#pricing-table {
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.01);
+  box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.01) l;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+#pricing-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+#pricing-table td {
+  padding: 0.5em 0 0.5em 0;
 }
