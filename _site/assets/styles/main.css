@@ -30,8 +30,7 @@ a:active {
 }
 
 footer {
-  background: #384251;
-  color: white;
+  background: #F7F8FA;
 }
 
 /* ----buttons---- */
@@ -100,7 +99,7 @@ button:hover,
 
 /* --- Hero section --- */
 h1#proposition-value {
-  font-size:3em;
+  font-size:2.7em;
   font-weight: 800;
   padding-top:2em;
 }
@@ -108,7 +107,7 @@ h1#proposition-value {
 /* --- Headings --- */
 
 h2.heading {
-  font-size:2.7em;
+  font-size:2.4em;
   font-weight: 700;
 }
 
