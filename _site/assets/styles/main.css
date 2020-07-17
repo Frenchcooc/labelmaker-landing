@@ -297,3 +297,38 @@ sup {
   border-radius: 8px;
   transition: all 0.625s cubic-bezier(0, 0, 0.2, 1);
 }
+
+/* Breadcrumb */
+
+.breadcrumb {
+  padding: 5em 0 0 0;
+  margin-bottom: 20px;
+  list-style: none;
+  text-align: center;
+  display: block !important;
+  background:none;
+}
+
+.breadcrumb>li {
+  display: inline-block;
+}
+
+.breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+.breadcrumb>.active {
+  color: #777;
+}
+
+.breadcrumb li a {
+  color #777;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
