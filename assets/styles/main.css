@@ -30,7 +30,7 @@ a:active {
 }
 
 footer {
-  background: #F7F8FA;
+  background: #f8fbff;
 }
 
 /* ----buttons---- */
@@ -324,7 +324,7 @@ sup {
 }
 
 .breadcrumb li a {
-  color #777;
+  color: #777; 
   text-decoration: none;
 }
 
