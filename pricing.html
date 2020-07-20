@@ -50,9 +50,13 @@ og_url: https://labelsmerge.com -->
                             </h3>
                         </div>
                         <div class="pricing-card-cta">
-                            <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeIndividualModal" role="link" data-checkout-product-item="cta">
-                                COMING SOON
-                            </button>
+                            <form method="POST" action="https://us-central1-labels-maker-263311.cloudfunctions.net/stripe/checkout">
+                                <input type="hidden" name="checkout_price_id" value="price_1H5p8SHOQBc5gSuGuPKKW0bn"/>
+                                <input type="hidden" name="checkout_mode" value="subscription"/>
+                                <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeIndividualModal" role="link" data-checkout-product-item="cta" type="submit">
+                                    COMING SOON
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -68,9 +72,13 @@ og_url: https://labelsmerge.com -->
                             </h3>
                         </div>
                         <div class="pricing-card-cta">
-                            <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeEnterpriseModal" role="link" data-checkout-product-item="cta">
-                                COMING SOON
-                            </button>
+                            <form method="POST" action="https://us-central1-labels-maker-263311.cloudfunctions.net/stripe/checkout">
+                                <input type="hidden" name="checkout_price_id" value="price_1H5p8ZHOQBc5gSuGZjW4kpNp"/>
+                                <input type="hidden" name="checkout_mode" value="payment"/>
+                                <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeEnterpriseModal" role="link" data-checkout-product-item="cta">
+                                    COMING SOON
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
