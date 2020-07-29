@@ -363,7 +363,21 @@
     ["AUS", "5305 Medium Embossed Tent Cards"],
     ["AUS", "5914 Medium Embossed Tent Cards"],
     ["AUS", "Presta 94220 Rectangle Labels"],
-
+    ["AUS", "5155 Return Address Labels"],
+    ["AUS", "5195 Easy Peel ® Return Address Labels"],
+    ["AUS", "6430 Return Address Labels"],
+    ["AUS", "8195 Easy Peel ® Return Address Labels"],
+    ["AUS", "15695 Matte Clear Return Address Labels"],
+    ["AUS", "18195 Return Address Labels"],
+    ["AUS", "18294 Easy Peel ® Return Address Labels"],
+    ["AUS", "18695 Easy Peel ® Return Address Labels"],
+    ["AUS", "38667 Clear Return Address Labels"],
+    ["AUS", "42895 EcoFriendly Return Address Labels"],
+    ["AUS", "48335 Return Address Labels"],
+    ["AUS", "6520 Easy Peel ® Address Labels"],
+    ["AUS", "6523 Easy Peel ® Address Labels"],
+    ["AUS", "6524 Easy Peel ® Address Labels"],
+    ["AUS", "Presta 94208 Blank Labels"],
     ["A4R", "5461 Color-Coding Round Labels"],
     ["A4R", "5462 Color-Coding Round Labels"],
     ["A4R", "5463 Color-Coding Round Labels"],
@@ -550,7 +564,7 @@
     ["AUS", "34222 Glossy Clear Round Labels"],
 
     ["AA4", "3475 Multipurpose Labels"],
-
+    ["AA4", "3483 Multipurpose Labels"],
     ["AUS", "41417 Index Maker Dividers"],
     ["AUS", "41462 Print-to-the-Edge Round Labels"],
     ["AUS", "41490 Printable Tags with Strings"],
@@ -1019,8 +1033,5 @@
     ["SL", "SL744"],
 
     ["SL", "SL722"],
-    ["SL", "SL726"],
-    ["SL", "SL592"],
-    ["SL", "SL744"],
   ]
 );
