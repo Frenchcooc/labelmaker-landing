@@ -1,84 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset
-	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-	<url>
-		<loc>https://labelsmerge.com/</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>1.00</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/pricing</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/contact</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/privacy</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/terms</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-5160-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-5163-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-5260-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-8160-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-8163-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-8167-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-11109-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-18160-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-15700-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>https://labelsmerge.com/labels/avery-18660-template-google-docs</loc>
-		<lastmod>2020-09-18T12:47:46+00:00</lastmod>
-		<priority>0.64</priority>
-	</url>
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://labelsmerge.com/</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/guides/how-to-create-labels-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/pricing</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/contact</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/guides/</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/privacy</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/terms</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/guides/how-to-print-labels-mailing-list-google-sheets</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-5160-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-5163-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-5260-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-8160-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-8163-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-8167-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-11109-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-18160-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-15700-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://labelsmerge.com/labels/avery-18660-template-google-docs</loc>
+  <lastmod>2020-11-02T15:47:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
