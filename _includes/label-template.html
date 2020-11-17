@@ -1,0 +1,36 @@
+<section>
+  <nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+      <li><a href="/labels">Templates</a></li>
+      <li><a class="font-weight-bold" href="#">Compatible with {{ label.name }}</a></li>
+    </ul>
+  </nav>
+  <div class="container text-center pb-3">
+    <h1 style="font-style: 2.7em; font-weight: 800">Template for Google Docs compatible with {{ label.name }}</h1>
+    <p class="col-md-9 mx-auto subheading">Find the most popular label templates for Google Docs & Google Sheets.</p>
+  </div>
+  <div class="container text-center">
+    <div>
+      <iframe
+        class="w-100"
+        style="min-height: 500px; border: 1px solid #eee; border-radius: 8px"
+        src="{{ label.document }}"
+      ></iframe>
+    </div>
+    <div>
+      <a
+        class="btn btn-filled mb-5"
+        href="{{ label.document }}"
+        role="button"
+        style="font-size: 1.2em; font-weight: 600"
+        >Download {{ label.name }} template for Google Docs</a
+      >
+    </div>
+  </div>
+  <div class="container text-center">
+    <h2>Other Templates Compatible</h2>
+    <p>{{ label.compatibilities }}</p>
+  </div>
+</section>
+
+{%- include reinsurance.html -%}
