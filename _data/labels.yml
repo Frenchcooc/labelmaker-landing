@@ -1,7 +1,20 @@
+########################################################
+# Avery
+########################################################
+#
+#
 avery-5160:
   name: Avery® 5160
   document: https://docs.google.com/document/d/1nV2WCpg80BFdP30y66RhwKNQOSPaVOLjwoww0x_CNQo/edit?usp=sharing
   compatibilities: 15660, 15700, 15960, 16460, 16790, 18160, 18260, 18660, 22837, 28660, 38260, 45160, 48160, 48260, 48360, 48460, 48860, 48960, 5260, 55160, 5520, 55360, 5620, 5630, 5660, 58160, 58660, 5960, 6240, 6521, 6525, 6526, 6585, 80509, 8160, 8215, 8250, 8460, 85560, 8620, 8660, 88560, 8860, 8920, 95520, 95915, Presta 94200
+
+avery-5162:
+  name: Avery® 5162
+  document: https://docs.google.com/document/d/1Kz7gBuf-cU0UkzfVZ0k2jz48KsTrTPYLuvHDmMSA67A/edit?usp=sharing
+
+avery-5167:
+  name: Avery® 5167
+  document: https://docs.google.com/document/d/1R7IdGiIjBlq6igdTIKhcgZAPykitB8wYZPBf3KdZeC4/edit?usp=sharing
 
 avery-5163:
   name: Avery® 5163
@@ -47,3 +60,126 @@ avery-18660:
   name: Avery® 18660
   document: https://docs.google.com/document/d/1jbtPSOKApgfzHUcw8fAwN7N19YOIuY_G2k11PSQl6ig/edit?usp=sharing
   compatibilities: 15660, 15700, 15960, 16460, 16790, 18160, 18260, 22837, 28660, 38260, 45160, 48160, 48260, 48360, 48460, 48860, 48960, 5160, 5260, 55160, 5520, 55360, 5620, 5630, 5660, 58160, 58660, 5960, 6240, 6521, 6525, 6526, 6585, 80509, 8160, 8215, 8250, 8460, 85560, 8620, 8660, 88560, 8860, 8920, 95520, 95915, Presta 94200
+#
+#
+########################################################
+# SheetLabels.com
+########################################################
+#
+#
+sheetlabels-SL1:
+  name: SheetLabels.com - SL1
+  document: https://docs.google.com/document/d/1afEDXXKTUS8ZKoO0qk8a4yL2XhkmivwnYHWQ9ZT8S1c/edit?usp=sharing
+
+sheetlabels-SL2:
+  name: SheetLabels.com - SL2
+  document: https://docs.google.com/document/d/1Qpki6PrIE0CYWe2ECe4m4DK1H52oWcYLc97YWs5spLo/edit?usp=sharing
+
+sheetlabels-SL3:
+  name: SheetLabels.com - SL3
+  document: https://docs.google.com/document/d/1wlR2W7c7is0LFoFE7yF8gFo6kQ7_nzEq41Wd4MLtpWE/edit?usp=sharing
+
+sheetlabels-SL100:
+  name: SheetLabels.com - SL100
+  document: https://docs.google.com/document/d/1EXd0vSIIfsV_4Af1BGcbEMEM_FSx5YJCsBTK7dt6r7c/edit?usp=sharing
+
+sheetlabels-SL101VP:
+  name: SheetLabels.com - SL101VP
+  document: https://docs.google.com/document/d/1-9dCCaqa3yg54rojL0j5nZT1Z3gCZjCa61ZwEM7Bbj0/edit?usp=sharing
+
+sheetlabels-SL103:
+  name: SheetLabels.com - SL103
+  document: https://docs.google.com/document/d/1QYj4ZvtxFXhsdSz7wk-1vRD35g3aoKKBD9dvCWDmGZc/edit?usp=sharing
+
+sheetlabels-SL105:
+  name: SheetLabels.com - SL105
+  document: https://docs.google.com/document/d/1nYtmdySLJpEUH2ndG6eNIlh4qxG4mdfo-XeMpY-cNDQ/edit?usp=sharing
+#
+#
+########################################################
+# OnlineLabels.com
+########################################################
+#
+#
+onlinelabels-OL114:
+  name: OnlineLabels.com - OL114
+  document: https://docs.google.com/document/d/1P345ovyUjPX6BfmbS2hBxrX3BXM2zQTQv_Z58JHomnY/edit?usp=sharing
+
+onlinelabels-OL400:
+  name: OnlineLabels.com - OL400
+  document: https://docs.google.com/document/d/1H8M6imjRHyA-BBnLJgaEHO-e6yz_G_j9soROX-SQdSo/edit?usp=sharing
+
+onlinelabels-OL100:
+  name: OnlineLabels.com - OL100
+  document: https://docs.google.com/document/d/1yBhyKKE3l70y4ZFcQs9zSpPweXDDuwBWlohJsHk2XvU/edit?usp=sharing
+
+onlinelabels-OL125:
+  name: OnlineLabels.com - OL125
+  document: https://docs.google.com/document/d/1hKsDGL8J1Tz5zauAttYD7_7VXO0krLRfQaZbE66B-Hg/edit?usp=sharing
+
+onlinelabels-OL1025:
+  name: OnlineLabels.com - OL1025
+  document: https://docs.google.com/document/d/1e1-4-1FzCHDVbBap4jCsq6b5UBmMgvDKoN5cs9Aj_Lo/edit?usp=sharing
+
+onlinelabels-OL875:
+  name: OnlineLabels.com - OL875
+  document: https://docs.google.com/document/d/1gjRGPwRmOBOaqoOi_QNAzXhvCC91CyD5GX36ojHyAy4/edit?usp=sharing
+
+onlinelabels-OL4904:
+  name: OnlineLabels.com - OL4904
+  document: https://docs.google.com/document/d/14Fd7Uor0aGcUf-ZBO4Zit5w3-rYh6POqSqePlT-f9BQ/edit?usp=sharing
+
+onlinelabels-OL25:
+  name: OnlineLabels.com - OL25
+  document: https://docs.google.com/document/d/1aRi6XSqtHvg3MDto1aTH0dDUq2YiNJOj_MJ47OD8muo/edit?usp=sharing
+
+onlinelabels-OL150:
+  name: OnlineLabels.com - OL150
+  document: https://docs.google.com/document/d/1mu95ApUmoN04c5nCvKHMJ_4HIM9vfQBbL2soVGuAxJw/edit?usp=sharing
+
+onlinelabels-OL2088:
+  name: OnlineLabels.com - OL2088
+  document: https://docs.google.com/document/d/1Qri3pG44NYsNvlwGTJlYwjM3MUCd_JMZBK0FegVpIyM/edit?usp=sharing
+
+onlinelabels-OL400:
+  name: OnlineLabels.com - OL400
+  document: https://docs.google.com/document/d/1ID66kXyLI9ySpvGTChK1FtjD7vYr3x4y6sCI2neuhb8/edit?usp=sharing
+
+onlinelabels-OL75:
+  name: OnlineLabels.com - OL75
+  document: https://docs.google.com/document/d/17xBlgqs4oG7OoltQ4zoxfdtVesHJao_n_O4HPjV0lJQ/edit?usp=sharing
+#
+#
+########################################################
+# Herma
+########################################################
+#
+#
+herma-4615:
+  name: Herma 4615
+  document: https://docs.google.com/document/d/1qvMb7RsZ7vZcPZZfdna-etMbc6TBCW9gyrr4RlkTkNY/edit?usp=sharing
+
+herma-4606:
+  name: Herma 4606
+  document: https://docs.google.com/document/d/1RTs3W2f1kdodLYCWHGNwy0HNSB6Y6G_KmZ_qntZJACA/edit?usp=sharing
+
+herma-4380:
+  name: Herma 4380
+  document: https://docs.google.com/document/d/15o-rsHWki4y3Amb1YoedJh2LjHk4X5FwZxvS7qkuGEc/edit?usp=sharing
+
+herma-5062:
+  name: Herma 5062
+  document: https://docs.google.com/document/d/1eaV28HlWo_ewH0uyDYWVCLWcsqGaJPOWgUrTuNXTSTE/edit?usp=sharing
+
+herma-5063:
+  name: Herma 5063
+  document: https://docs.google.com/document/d/1AnBunw6dt_EwqPTezBlKNs6rJ4VEXj7EOeIP22BvcpY/edit?usp=sharing
+
+herma-5064:
+  name: Herma 5064
+  document: https://docs.google.com/document/d/1Rko3P7D8Lmi_LiJajQKKwoQuSZxVXcZk1sMd69XFiSU/edit?usp=sharing
+
+herma-5065:
+  name: Herma 5065
+  document: https://docs.google.com/document/d/1C9r7L3n4n6DGtWlN5OBSvP1cI7AzLcUyG9qEbIBsoH0/edit?usp=sharing
+

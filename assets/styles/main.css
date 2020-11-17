@@ -298,6 +298,10 @@ sup {
 }
 /* Labels */
 
+.list-unstyled.list-columns {
+  columns: 3;
+}
+
 /* Breadcrumb */
 
 .breadcrumb {
