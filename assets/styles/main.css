@@ -350,3 +350,27 @@ sup {
   margin: 2rem auto;
   box-shadow: -2px -4px 20px 0px rgba(32, 41, 50, 0.12);
 }
+
+/* Black Friday */
+
+#bf-banner {
+  background: #000000;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  padding: 1.2rem;
+}
+body {
+  padding-top:80px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 150px;
+  } /* add padding on tablet and mobile displays for banner */
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    padding-top: 200px;
+  } /* add padding on tablet and mobile displays for banner */
+}
