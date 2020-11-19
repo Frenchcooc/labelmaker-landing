@@ -33,3 +33,23 @@
   </div>
   </div>
 </footer>
+
+<!-- Display the countdown timer in an element -->
+<script>
+  // Set the date we're counting down to
+  let countDownDate = new Date("November 30, 2020 23:59:99").getTime();
+  // Get today's date and time
+  let now = new Date().getTime();
+  // Find the distance between now and the count down date
+  let distance = countDownDate - now;
+  // Time calculations for days, hours, minutes and seconds
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "0";
+  } else {
+    document.getElementById("bf-sales-date").innerHTML = days
+  }  
+</script>
