@@ -298,7 +298,9 @@ sup {
 /* Labels */
 
 .list-unstyled.list-columns {
-  columns: 3;
+  column-count: 3;
+  column-gap: 50px;
+  column-width: 100px;
 }
 
 /* Breadcrumb */
