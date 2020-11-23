@@ -8,7 +8,7 @@
 
   <meta property="og:title" content="{{ page.og_title }}" />
   <meta property="og:description" content="Labelmaker helps you mail merge labels with Google Docs & Sheets. Print mailing labels from a wide choice of label manufacturers, including Avery, Herma, SheetLabels and more." />
-  <meta property="og:image" src="https://labelsmerge.com/assets/images/og-image_labelmaker.png" />
+  <meta property="og:image" src="{{ page.og_img | default:'https://labelsmerge.com/assets/images/og-image_labelmaker.png' }}" />
   <meta property="og:url" content="{{ page.og_url }}" />
 
   <link rel="icon" href="/assets/images/brand/favicon.ico" type="image/x-icon" />
