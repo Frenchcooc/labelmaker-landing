@@ -351,6 +351,10 @@ sup {
   box-shadow: -2px -4px 20px 0px rgba(32, 41, 50, 0.12);
 }
 
+.guide-section img.no-shadow {
+  box-shadow: none;
+}
+
 /* Black Friday */
 
 #bf-banner {
@@ -361,7 +365,7 @@ sup {
   padding: 1.2rem;
 }
 body {
-  padding-top:80px;
+  padding-top: 80px;
 }
 @media screen and (max-width: 768px) {
   body {
