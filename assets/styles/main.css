@@ -354,3 +354,27 @@ sup {
 .guide-section img.no-shadow {
   box-shadow: none;
 }
+
+/* Christmas offer */
+
+#christmas-banner {
+  background: #2abb9b;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  padding: 1rem;
+}
+body {
+  padding-top:80px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 150px;
+  } /* add padding on tablet and mobile displays for banner */
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    padding-top: 200px;
+  } /* add padding on tablet and mobile displays for banner */
+}
