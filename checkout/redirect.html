@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <p>
-  <span style="font-family: Arial, Helvetica, sans-serif;">Redirecting to Stripe checkout...</span>
+  <span style="font-family: Arial, Helvetica, sans-serif">Redirecting to Stripe checkout...</span>
 </p>
 <p id="error-message"></p>
 <script src="https://js.stripe.com/v3/"></script>
@@ -18,7 +18,11 @@
       throw Error("Missing a Stripe Checkout ID.");
     }
 
-    var stripe = Stripe("pk_live_Kix0m529YYWW5ekfGm97CBpw00ztLibtiz");
+    var stripe = Stripe(
+      checkoutSessionId.indexOf("_test") > 0
+        ? "pk_test_9fwOSs4ZqGBc83FaNaEH46Y100Z9PTVeP3"
+        : "pk_live_Kix0m529YYWW5ekfGm97CBpw00ztLibtiz"
+    );
     stripe
       .redirectToCheckout({
         sessionId: checkoutSessionId,
