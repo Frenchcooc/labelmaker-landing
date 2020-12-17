@@ -3,6 +3,10 @@
 ########################################################
 #
 #
+avery-3475:
+  name: Avery® 3475
+  document: https://docs.google.com/document/d/1T7hUtgWgo4Y8MJVLHYbyulteBLS_mKQXH4noO9Ir0vU/edit?usp=sharing
+
 avery-5160:
   name: Avery® 5160
   document: https://docs.google.com/document/d/1nV2WCpg80BFdP30y66RhwKNQOSPaVOLjwoww0x_CNQo/edit?usp=sharing
@@ -10,7 +14,13 @@ avery-5160:
 
 avery-5162:
   name: Avery® 5162
-  document: https://docs.google.com/document/d/1Kz7gBuf-cU0UkzfVZ0k2jz48KsTrTPYLuvHDmMSA67A/edit?usp=sharing
+  document: https://docs.google.com/document/d/1VbgWccmx3KWZdZyyZW7kW15CqmYIpbUjWzou2tHoP8I/edit?usp=sharing
+  compatibilities: 18262, 48462, 48862, 5262, 5522, 5654, 5962, 6445, 6455, 8162, 8252, 8462, 95522, Presta 94206
+
+avery-5164:
+  name: Avery® 5164
+  document: https://docs.google.com/document/d/1jZRayNZePOLEbpQxhcBx3SfjQHQ_w-hFOlKKM8Vlof0/edit?usp=sharing
+  compatibilities: 15264, 45464, 48264, 48464, 48864, 5264, 55164, 5524, 55464, 58164, 6436, 8164, 8254, 8464, 8564, 95905, 95940
 
 avery-5167:
   name: Avery® 5167
@@ -25,6 +35,11 @@ avery-5260:
   name: Avery® 5260
   document: https://docs.google.com/document/d/1CLMgd3VW5iBcN7zgzhelX-DRLmqNG9FlKdjs5w7K_wU/edit?usp=sharing
   compatibilities: 15660, 15700, 15960, 16460, 16790, 18160, 18260, 18660, 22837, 28660, 38260, 45160, 48160, 48260, 48360, 48460, 48860, 48960, 5160, 55160, 5520, 55360, 5620, 5630, 5660, 58160, 58660, 5960, 6240, 6521, 6525, 6526, 6585, 80509, 8160, 8215, 8250, 8460, 85560, 8620, 8660, 88560, 8860, 8920, 95520, 95915, Presta 94200
+
+avery-5960:
+  name: Avery® 5960
+  document: https://docs.google.com/document/d/1Wfc3IVDbxWXCvQWgU5wf0H5v7ZllTrr922aLH8AKpa4/edit?usp=sharing
+  compatibilities: 15660, 15700, 15960, 16460, 16790, 18160, 18260, 18660, 22837, 28660, 32660, 38260, 45160, 48160, 48260, 48360, 48460, 48860, 48960, 5160, 5260, 55160, 5520, 55360, 5620, 5630, 5660, 58160, 58660, 6240, 6521, 6525, 6526, 6585, 75160, 80509, 8160, 8215, 8250, 8460, 85560, 8620, 8660, 88560, 8860, 8920, 95520, 95915, Presta 94200
 
 avery-8160:
   name: Avery® 8160
@@ -60,7 +75,7 @@ avery-18660:
   name: Avery® 18660
   document: https://docs.google.com/document/d/1jbtPSOKApgfzHUcw8fAwN7N19YOIuY_G2k11PSQl6ig/edit?usp=sharing
   compatibilities: 15660, 15700, 15960, 16460, 16790, 18160, 18260, 22837, 28660, 38260, 45160, 48160, 48260, 48360, 48460, 48860, 48960, 5160, 5260, 55160, 5520, 55360, 5620, 5630, 5660, 58160, 58660, 5960, 6240, 6521, 6525, 6526, 6585, 80509, 8160, 8215, 8250, 8460, 85560, 8620, 8660, 88560, 8860, 8920, 95520, 95915, Presta 94200
-#
+
 #
 ########################################################
 # SheetLabels.com
