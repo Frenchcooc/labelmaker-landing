@@ -11,9 +11,9 @@
  *
  */
 
-(function(manufacturers, labels) {
+(function (manufacturers, labels) {
   window._catalog = {
-    allLabels: labels,
+    allLabels: [],
     allManufacturers: manufacturers,
     allLabelsByManufacturers: {},
   };
@@ -24,12 +24,14 @@
     var manufacturerCode = productId.split("-").shift();
     var manufacturer = manufacturers[manufacturerCode] || "_";
     var productName = label[1];
+    var productFullName = manufacturer + ' - ' + productName
 
     if (!window._catalog.allLabelsByManufacturers[manufacturer]) {
       window._catalog.allLabelsByManufacturers[manufacturer] = [];
     }
 
     window._catalog.allLabelsByManufacturers[manufacturer].push({ name: productName, id: productId });
+    window._catalog.allLabels.push({ name: productFullName, id: productId });
   }
 })(
   {
