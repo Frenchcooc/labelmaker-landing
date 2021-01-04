@@ -19,16 +19,23 @@ og_url: https://labelsmerge.com
                 <div class="col-xs-6 col-sm-8 col-md-8 col-lg-4 mb-4 mx-auto">
                     <div id="plan-free" class="pricingcard">
                         <div class="pricing-card-header">
-                            <h5 class="mt-2 mb-1 font-weight-bold">Free</h5>
-                            <span class="pricing-subheader">Start free, upgrade when you want.</span>
+                            <h5 class="mt-2 mb-1 font-weight-bold">30 Days License</h5>
+                            <span class="pricing-subheader">Perfect to print Holidays Greetings.</span>
                         </div>
                         <div class="pricing-card-body">
                             <h3 class="mt-2 mb-2 font-weight-bold pricingcard-price" style="font-size: 1.8em; color: #04143a;">
-                                <small style="font-size: 50%;">$</small>0<sup> /year</sup>
+                                <small style="font-size: 50%;">$</small>9<sup>.99 /year</sup>
+                                <small style="font-size:0.8rem; display:block">Available 30 days from the date of purchase</small>
                             </h3>
                         </div>
                         <div class="pricing-card-cta">
-                            <a href="https://gsuite.google.com/marketplace/app/create_print_labels_labelmaker/585829216542" class="btn btn-outline" style="width:100%">START FREE</a>
+                            <form method="POST" action="https://us-central1-labels-maker-263311.cloudfunctions.net/stripe/checkout">
+                                <input type="hidden" name="checkout_price_id" value="price_1Hvmu1HOQBc5gSuG3Mn22cxu" />
+                                <input type="hidden" name="checkout_mode" value="payment" />
+                                <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeIndividualModal" role="link" data-checkout-product-item="cta" type="submit">
+                                    BUY NOW
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -40,16 +47,17 @@ og_url: https://labelsmerge.com
                         </div>
                         <div class="pricing-card-body">
                             <h3 class="mt-2 mb-2 font-weight-bold pricingcard-price" style="font-size: 1.8em; color: #04143a;" data-checkout-product-item="price">
-                                <!-- <strike><small style="font-size: 50%;">$</small>39<sup>.99</sup></strike> -->
-                                <small style="font-size: 50%;">$</small>29<sup>.99 /year</sup>
+                                <strike style="font-size:0.7em">$29.99</strike><span style="color:#2abb9b;"><small style="font-size: 50%;"> $</small>19<sup>.99 /year</sup></span>
+                                <small style="font-size:0.8rem; display:block">🎁 Save $10 until Christmas 🎁</small>
                             </h3>
                         </div>
                         <div class="pricing-card-cta">
                             <form method="POST" action="https://us-central1-labels-maker-263311.cloudfunctions.net/stripe/checkout">
                                 <input type="hidden" name="checkout_price_id" value="price_1HP6CbHOQBc5gSuG0SrW8ql5" />
                                 <input type="hidden" name="checkout_mode" value="subscription" />
+                                <input type="hidden" name="checkout_discount" value="christmas" />
                                 <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeIndividualModal" role="link" data-checkout-product-item="cta" type="submit">
-                                    BUY NOW
+                                    BUY NOW 🎄
                                 </button>
                             </form>
                         </div>
@@ -64,16 +72,17 @@ og_url: https://labelsmerge.com
                         </div>
                         <div class="pricing-card-body">
                             <h3 class="mt-2 mb-2 font-weight-bold" style="font-size: 1.8em; color: #04143a;" data-checkout-product-item="price">
-                                <!-- <strike><small style="font-size: 50%;">$</small>89<sup>.99</sup></strike> -->
-                                <small style="font-size: 50%;">$</small>79<sup>.99 /year</sup>
+                                <strike style="font-size:0.7em">$79.99</strike><span style="color:#2abb9b;"><small style="font-size: 50%;"> $</small>59<sup>.99 once</sup></span>
+                                <small style="font-size:0.8rem; display:block">🎁 Save $20 until Christmas 🎁</small>
                             </h3>
                         </div>
                         <div class="pricing-card-cta">
                             <form method="POST" action="https://us-central1-labels-maker-263311.cloudfunctions.net/stripe/checkout">
                                 <input type="hidden" name="checkout_price_id" value="price_1H5p8ZHOQBc5gSuGZjW4kpNp" />
                                 <input type="hidden" name="checkout_mode" value="payment" />
+                                <input type="hidden" name="checkout_discount" value="christmas" />
                                 <button class="stripe-checkout btn btn-filled" data-toggle="modal" data-target="#activeEnterpriseModal" role="link" data-checkout-product-item="cta">
-                                    BUY NOW
+                                    BUY NOW 🎄
                                 </button>
                             </form>
                         </div>
@@ -105,7 +114,7 @@ og_url: https://labelsmerge.com
                                     <td class="text-center"><img src="/assets/images/elements/checkmark.svg" alt="checkmark" /></td>
                                 </tr>
                                 <tr>
-                                    <td>2500+ templates available</td>
+                                    <td>5000+ templates available</td>
                                     <td class="text-center">Limited</td>
                                     <td class="text-center"><img src="/assets/images/elements/checkmark.svg" alt="checkmark" /></td>
                                 </tr>
