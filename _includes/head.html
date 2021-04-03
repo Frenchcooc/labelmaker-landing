@@ -1,22 +1,25 @@
 <head>
+  <!-- HTML Meta Tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>{{ page.title }}</title>
   <link rel="canonical" href="{{ page.canonical }}" />
+  <title>{{ page.title }}</title>
   <meta name="description" content="Labelmaker helps you mail merge labels with Google Docs & Sheets. Print mailing labels from a wide choice of providers, including Avery, Herma, SheetLabels and more." />
 
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{{ page.og_url }}" />
+  <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.og_title }}" />
   <meta property="og:description" content="Labelmaker helps you mail merge labels with Google Docs & Sheets. Print mailing labels from a wide choice of label manufacturers, including Avery, Herma, SheetLabels and more." />
   <meta property="og:image" src="{{ page.og_img | default:'https://labelsmerge.com/assets/images/open-graph/global.png' }}" />
-  <meta property="og:url" content="{{ page.og_url }}" />
 
-  <meta name="twitter:site" content="@labelsmerge" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="{{ page.og_url }}">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="labelsmerge.com">
+  <meta property="twitter:url" content="https://labelsmerge.com/">>
   <meta name="twitter:title" content="{{ page.og_title }}">
   <meta name="twitter:description" content="{{ page.og_description }}">
-  <meta name="twitter:image" content="{{ page.og_image | default: 'https://mailmeteor.com/assets/img/opengraph/main.jpg' }}">
+  <meta name="twitter:image" content="{{ page.og_image | default: 'https://labelsmerge.com/assets/images/open-graph/global.png' }}">
 
   <link rel="icon" href="/assets/images/brand/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
