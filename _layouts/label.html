@@ -14,7 +14,7 @@ layout: default
     </ul>
   </nav>
   <div class="container text-center pb-3">
-    <h1 style="font-style: 2.7em; font-weight: 800">Template for Google Docs compatible with {{ page.name }}</h1>
+    <h1>Template for Google Docs compatible with {{ page.name }}</h1>
     <p class="col-md-9 mx-auto subheading">Find the most popular label templates for Google Docs & Google Sheets.</p>
   </div>
   <div class="container text-center">
@@ -32,23 +32,28 @@ layout: default
     </div>
   </div>
 
-  <!-- <a
-    href="https://docs.google.com/document/export?format=docx&id={{ productid }}&includes_info_params=true"
-    target="_blank"
-    >Word</a
-  >
-  <a
-    href="https://docs.google.com/document/export?format=pdf&id={{ productid }}&includes_info_params=true"
-    target="_blank"
-    >PDF</a
-  > -->
-
   {% if page.compatibilities %}
   <div class="container" style="margin-bottom: 2rem">
     <h2>Other Templates Compatible</h2>
     <p>{{ page.compatibilities }}</p>
   </div>
   {% endif %}
+
+  <div class="container" style="margin-bottom: 2rem">
+    <h2>{{ page.name }} Word template</h2>
+    <p><a
+    href="https://docs.google.com/document/export?format=docx&id={{ productid }}&includes_info_params=true"
+    target="_blank"
+    >Download {{ page.name }} template for Word</a></p>
+  </div>
+
+  <div class="container" style="margin-bottom: 2rem">
+    <h2>{{ page.name }} PDF version</h2>
+    <p><a
+    href="https://docs.google.com/document/export?format=pdf&id={{ productid }}&includes_info_params=true""
+    target="_blank"
+    >Download {{ page.name }} PDF file</a></p>
+  </div>
 
   <div class="container">
     <h2>Disclaimer</h2>
