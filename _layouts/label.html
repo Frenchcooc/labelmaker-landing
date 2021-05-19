@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<section>
+  <nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+      <li><a href="/labels">Templates</a></li>
+      <li>
+        <a class="font-weight-bold" href="#">Compatible with {{ page.name }}</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container text-center pb-3">
+    <h1 style="font-style: 2.7em; font-weight: 800">
+      Template for Google Docs compatible with {{ page.name }}
+    </h1>
+    <p class="col-md-9 mx-auto subheading">
+      Find the most popular label templates for Google Docs & Google Sheets.
+    </p>
+  </div>
+  <div class="container text-center">
+    <div>
+      <iframe
+        class="w-100"
+        style="min-height: 500px; border: 1px solid #eee; border-radius: 8px"
+        src="{{ page.document }}"
+      ></iframe>
+    </div>
+    <div>
+      <a
+        class="btn btn-filled mb-5"
+        href="{{ page.document }}"
+        role="button"
+        style="font-size: 1.2em; font-weight: 600"
+        >Download {{ page.name }} template for Google Docs</a
+      >
+    </div>
+  </div>
+
+  {% if page.compatibilities %}
+  <div class="container" style="margin-bottom: 2rem">
+    <h2>Other Templates Compatible</h2>
+    <p>{{ page.compatibilities }}</p>
+  </div>
+  {% endif %}
+
+  <div class="container">
+    <h2>Disclaimer</h2>
+    <p>
+      Templates provided herein are compatible with different labels providers,
+      including Avery®, SheetLabels.com, OnlineLabels.com, Herma and others. All
+      products and company names are trademarks™ or registered® trademarks of
+      their respective holders. Use of them in this website does not imply any
+      affiliation with or endorsement by them.
+      <strong>Labelmaker is not affiliated with those providers.</strong>
+    </p>
+  </div>
+</section>
+
+{%- include reinsurance.html -%}

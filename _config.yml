@@ -1,0 +1,4 @@
+collections:
+  labels:
+    output: true
+    permalink: /labels/:title
