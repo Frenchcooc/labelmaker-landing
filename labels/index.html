@@ -14,13 +14,13 @@ og_url: https://labelsmerge.com/labels/
     </div>
     <div class="container">
         <section>
-            <h2>Most popular <a href="https://www.avery.com/">Avery®</a> templates for Google Docs</h2>
+            <h2>Most popular labels for Google Docs</h2>
             <ul class="list-unstyled list-columns">
-                <li><a href=" /labels/avery-3475-template-google-docs">Avery® 3475</a></li>
-                <li><a href=" /labels/avery-5160-template-google-docs">Avery® 5160</a></li>
-                <li><a href=" /labels/avery-5162-template-google-docs">Avery® 5162</a></li>
+                <li><a href="/labels/avery-3475-template-google-docs">Avery® 3475</a></li>
+                <li><a href="/labels/avery-5160-template-google-docs">Avery® 5160</a></li>
+                <li><a href="/labels/avery-5162-template-google-docs">Avery® 5162</a></li>
                 <li><a href="/labels/avery-5163-template-google-docs">Avery® 5163</a></li>
-                <li><a href=" /labels/avery-5164-template-google-docs">Avery® 5164</a></li>
+                <li><a href="/labels/avery-5164-template-google-docs">Avery® 5164</a></li>
                 <li><a href="/labels/avery-5260-template-google-docs">Avery® 5260</a></li>
                 <li><a href="/labels/avery-5960-template-google-docs">Avery® 5960</a></li>
                 <li><a href="/labels/avery-8160-template-google-docs">Avery® 8160</a></li>
@@ -33,32 +33,33 @@ og_url: https://labelsmerge.com/labels/
             </ul>
         </section>
         <section>
+            <h2>Templates compatible with <a href="https://www.avery.com/">Avery®</a></h2>
+            <ul class="list-unstyled list-columns">
+                {% for label in site.labels %}
+                    {% if label.vendor == "Avery" %}
+                    <li><a href="{{label.slug}}">{{ label.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
             <h2>Templates compatible with <a href="https://www.sheetlabels.com/">SheetLabels.com</a></h2>
             <ul class="list-unstyled list-columns">
-                <li><a href=" /labels/sheetlabels-SL1-template-google-docs">SheetLabels.com - SL1</a></li>
-                <li><a href="/labels/sheetlabels-SL2-template-google-docs">SheetLabels.com - SL2</a></li>
-                <li><a href="/labels/sheetlabels-SL3-template-google-docs">SheetLabels.com - SL3</a></li>
-                <li><a href="/labels/sheetlabels-SL100-template-google-docs">SheetLabels.com - SL100</a></li>
-                <li><a href="/labels/sheetlabels-SL101VP-template-google-docs">SheetLabels.com - SL101VP</a></li>
-                <li><a href="/labels/sheetlabels-SL103-template-google-docs">SheetLabels.com - SL103</a></li>
-                <li><a href="/labels/sheetlabels-SL105-template-google-docs">SheetLabels.com - SL105</a></li>
+                {% for label in site.labels %}
+                    {% if label.vendor == "SheetLabels.com" %}
+                    <li><a href="{{label.slug}}">{{ label.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </section>
         <section>
             <h2>Templates compatible with <a href="https://www.onlinelabels.com/">OnlineLabels.com</a></h2>
             <ul class="list-unstyled list-columns">
-                <li><a href="/labels/onlinelabels-OL25-template-google-docs">OnlineLabels.com - OL25</a></li>
-                <li><a href="/labels/onlinelabels-OL75-template-google-docs">OnlineLabels.com - OL75</a></li>
-                <li><a href="/labels/onlinelabels-OL100-template-google-docs">OnlineLabels.com - OL100</a></li>
-                <li><a href="/labels/onlinelabels-OL114-template-google-docs">OnlineLabels.com - OL114</a></li>
-                <li><a href="/labels/onlinelabels-OL114-template-google-docs">OnlineLabels.com - OL114</a></li>
-                <li><a href="/labels/onlinelabels-OL125-template-google-docs">OnlineLabels.com - OL125</a></li>
-                <li><a href="/labels/onlinelabels-OL150-template-google-docs">OnlineLabels.com - OL150</a></li>
-                <li><a href="/labels/onlinelabels-OL400-template-google-docs">OnlineLabels.com - OL400</a></li>
-                <li><a href="/labels/onlinelabels-OL875-template-google-docs">OnlineLabels.com - OL875</a></li>
-                <li><a href="/labels/onlinelabels-OL1025-template-google-docs">OnlineLabels.com - OL1025</a></li>
-                <li><a href="/labels/onlinelabels-OL2088-template-google-docs">OnlineLabels.com - OL2088</a></li>
-                <li><a href="/labels/onlinelabels-OL4904-template-google-docs">OnlineLabels.com - OL4904</a></li>
+                {% for label in site.labels %}
+                    {% if label.vendor == "OnlineLabels.com" %}
+                    <li><a href="{{label.slug}}">{{ label.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </section>
         <section>
@@ -71,16 +72,6 @@ og_url: https://labelsmerge.com/labels/
                 <li><a href="/labels/herma-5063-template-google-docs">Herma 5063</a></li>
                 <li><a href="/labels/herma-5064-template-google-docs">Herma 5064</a></li>
                 <li><a href="/labels/herma-5065-template-google-docs">Herma 5065</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Templates compatible with <a href="https://www.avery.com/">Avery®</a></h2>
-            <ul class="list-unstyled list-columns">
-                {% for label in site.labels %}
-                    {% if label.vendor == "Avery" %}
-                    <li><a href="{{label.slug}}">{{ label.name }}</a></li>
-                    {% endif %}
-                {% endfor %}
             </ul>
         </section>
     </div>
