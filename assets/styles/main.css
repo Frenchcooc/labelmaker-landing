@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  padding: 2.5em 0 2.5em 0;
+  padding: 2.5rem 0;
 }
 
 a {
@@ -100,7 +100,7 @@ button:hover,
 h1 {
   font-size: 2.7em;
   font-weight: 800;
-  padding-top: 1em;
+  padding-top: 0.5rem;
 }
 
 h2.heading {
@@ -135,7 +135,7 @@ footer a:not(.btn),
 
 .navbar {
   background-color: white;
-  border-bottom: 1px solid #dadce0;
+  border-bottom: 1px solid #ebecee;
   padding: 1em;
 }
 
@@ -342,7 +342,8 @@ sup {
   padding-top: 5rem;
 }
 
-.guide-section img {
+.guide-section img,
+.guide-section video {
   width: 80%;
   display: block;
   margin: 2rem auto;
