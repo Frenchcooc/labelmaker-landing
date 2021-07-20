@@ -4,8 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% if page.canonical %}
   <link rel="canonical" href="{{ page.canonical }}" />
-  {% endif %}
+  {% endif %} {% if page.document && page.name %}
+  <title>Template compatible with {{ page.name }} - Google Docs, PDF, Word</title>
+  {% else %}
   <title>{{ page.title }}</title>
+  {% endif %}
   <meta
     name="description"
     content="{{ page.description | default: 'Labelmaker helps you mail merge labels with Google Docs & Sheets. Print mailing labels from a wide choice of label manufacturers, including Avery, Herma, SheetLabels and more.' }}"
@@ -38,11 +41,7 @@
     content="{{ page.og_image | default: 'https://labelsmerge.com/assets/images/open-graph/global.png' }}"
   />
 
-  <link
-    rel="icon"
-    href="/assets/images/brand/favicon.ico"
-    type="image/x-icon"
-  />
+  <link rel="icon" href="/assets/images/brand/favicon.ico" type="image/x-icon" />
   <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -50,16 +49,10 @@
     crossorigin="anonymous"
   />
   <link rel="stylesheet" href="/assets/styles/main.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-136395985-5"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136395985-5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
