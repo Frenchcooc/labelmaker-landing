@@ -2934,7 +2934,6 @@
     ["AUS-P69690", "Presta 69690 - Rectangle Labels"],
     ["AUS-P69726", "Presta 69726 - Rectangle Labels"],
     ["AUS-P70122", "Presta 70122 - Rectangle Labels"],
-    ["AUS-P94103", "Presta 94103 - Square  Labels"],
     ["AUS-P94230", "Presta 94230 - Rectangle Labels"],
     ["AUS-P94231", "Presta 94231 - Rectangle Labels"],
     ["AUS-P94237", "Presta 94237 - Rectangle Labels"],
