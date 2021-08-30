@@ -7,16 +7,145 @@ og_url: https://labelsmerge.com/contact
 ---
 
 
-<section>
+<section class="pb-0">
     <div class="container text-center pb-3">
-        <h1>Contact us</h1>
+        <h1>Ask for help</h1>
         <p class="col-md-9 mx-auto subheading">Our team speaks English, French and Spanish. </br> We'll do our best to answer as quickly as we can.</p>
     </div>
-    <div class="container text-center">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezTmCqS9RFoWavnFSdIMydFyAl13GsDo2DbktMApNwl1MilA/viewform?embedded=true" width="640" height="963" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+    <form  autocomplete="off" class="support-form text-center" id="support-form">
+        <fieldset class="container">
+            <label><strong>What can we help you with today?</strong></label>
+            <select class="form-control mb-3" id="support-form-options">
+                <option disabled selected>Select a topic...</option>
+                <option value="cancel">💳 Cancel my subscription</option>
+                <option value="help">⛑ I don't understand how to print labels</option>
+                <option value="missing">🕵️‍♂️ My template is missing</option>
+                <option value="feedback">🚀 I want to suggest a feature</option>
+                <option value="other">💌 Other</option>
+            </select>
+        </fieldset>
 
+        <fieldset class="container" data-option="cancel">
+            <h2>How to cancel my subscription?</h2>
+            <p>To no longer pay for the renewal of your purchased Labelmaker subscription, please follow these steps:</p>
+            <ol>
+                <li>Start by <a href="http://docs.new/">opening a new Google Docs.</a></li>
+                <li>In the <strong>"Add-ons"</strong> menu, click on "Labelmaker" > <strong>"My account"</strong></li>
+                <li>Under the "Current plan" section, click on <strong>"Manage subscription"</strong></li>
+                <li>Now click on <strong>"Cancel plan"</strong></li>
+            </ol>
+            <p>Still having trouble? <a href="javascript:showContactForm()">Contact us</a>, we are here to help.</p>
+        </fieldset>
+
+        <fieldset class="container" data-option="help">
+            <h2>How to get started with Labelmaker?</h2>
+            <p>It's really easy to create your first labels with Labelmaker. Just follow theses steps:</p>
+            <ol>
+                <li>Create a new Google Docs</li>
+                <li>Open Labelmaker from the add-ons menu</li>
+                <li>Select your template and then create labels!</li>
+            </ol>
+            <p>Here's a <a href="http://localhost:4000/guides/how-to-make-labels-google-docs">step-by-step guide with pictures</a> explaining how to create labels with Labelmaker.</p>
+        </fieldset>
+
+        <fieldset class="container" data-option="missing">
+            <h2>I can't find my template</h2>
+            <p>Labelmaker has around 5000+ templates in stock. If you have searched for it and still couldn't find your template number, <a href="https://groups.google.com/g/labelmaker/c/5VzevJ1cmbI">go to the Labelmaker forum</a> and comment the thread where we compile templates request.</p>
+            <p>We regularly add new templates to the software.</p>
+        </fieldset>
+
+        <fieldset class="container" data-option="feedback">
+          <h2>Where to send feedback?</h2>
+          <p>Sharing your thoughs and feature request is much appreciated. To do so, <a href="https://groups.google.com/g/labelmaker">go to the Labelmaker forum</a> and open a new topic.</p>
+          <p>Tip: Make sure to add "[Feedback]" to the title of your post.</p>
+        </fieldset>
+
+        <fieldset data-option="other">
+            <div class="container">
+                <iframe loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSezTmCqS9RFoWavnFSdIMydFyAl13GsDo2DbktMApNwl1MilA/viewform?embedded=true" width="640" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </fieldset>
+    </form>
+    
 </section>
+
+<script>
+
+
+function showSupportItem(selectedOption, hideOthers) {
+    var form = document.getElementById('support-form');
+    var fieldsets = form.getElementsByTagName('fieldset')
+
+    for (var i = 1; i < fieldsets.length; i++) {
+        var fieldset = fieldsets[i]
+        var currentOption = fieldset.getAttribute('data-option')
+
+        if (currentOption === selectedOption) {
+            fieldset.style.display = "block"
+        }
+        
+        else if (hideOthers) {
+            fieldset.style.display = "none"
+        }
+    }
+}
+
+function showContactForm() {
+    showSupportItem('other', false)
+}
+
+// Event listener for options selection
+document.getElementById('support-form-options').onchange = function () {
+    var selectedOption = this.value
+    
+    showSupportItem(selectedOption, true)
+}
+
+// Initialize 
+function initiliazeSupportForm() {
+    showSupportItem("", true);
+    console.log("initialized")
+}
+
+initiliazeSupportForm()
+</script>
+
+<style>
+    .support-form {
+        font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        letter-spacing: .1px;
+        line-height: 24px;
+        color: #202124;
+        font-weight: 400;
+        width: 100%;
+        word-break: break-word;
+    }
+
+    .support-form fieldset:not([data-option="other"]) {
+        max-width: 576px;
+        margin-top: 12px;
+        background-color: #fff;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        padding: 20px 24px 0 24px;
+        position: relative;
+        text-align: left;
+    }
+
+    .support-form fieldset:first-child {
+        border-top: 12px solid #007DE7;
+    }
+
+    .support-form fieldset h2 {
+        font-size: inherit;
+        font-family: inherit;
+        letter-spacing:inherit;
+        line-height: inherit;
+        font-weight: 700;
+    }
+
+</style>
 
 
 
