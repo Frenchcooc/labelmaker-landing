@@ -114,6 +114,10 @@ p.subheading {
 
 /* --- nav ---- */
 
+footer a:not(.btn) {
+  font-size: 0.8rem;
+}
+
 footer a:not(.btn),
 .navbar a:not(.btn) {
   color: black;
