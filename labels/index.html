@@ -6,7 +6,6 @@ og_title: Label templates for Google Docs & Sheets
 og_url: https://labelsmerge.com/labels/
 ---
 
-
 <section>
     <div class="container text-center">
         <h1>Label templates for Google Docs</h1>
@@ -15,7 +14,7 @@ og_url: https://labelsmerge.com/labels/
     <div class="container">
         <section>
             <h2>Most popular labels for Google Docs</h2>
-            <ul class="list-unstyled list-columns">
+            <ul class="list-unstyled list-columns" style="line-height:200%">
                 <li><a href="/labels/avery-3475-template-google-docs">Avery® 3475</a></li>
                 <li><a href="/labels/avery-5160-template-google-docs">Avery® 5160</a></li>
                 <li><a href="/labels/avery-5162-template-google-docs">Avery® 5162</a></li>
@@ -30,7 +29,7 @@ og_url: https://labelsmerge.com/labels/
         </section>
         <section>
             <h2>Templates compatible with <a href="https://www.avery.com/">Avery®</a></h2>
-            <ul class="list-unstyled list-columns">
+            <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "Avery" %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
@@ -40,7 +39,7 @@ og_url: https://labelsmerge.com/labels/
         </section>
         <section>
             <h2>Templates compatible with <a href="https://www.sheetlabels.com/">SheetLabels.com</a></h2>
-            <ul class="list-unstyled list-columns">
+            <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "SheetLabels.com" %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
@@ -50,7 +49,7 @@ og_url: https://labelsmerge.com/labels/
         </section>
         <section>
             <h2>Templates compatible with <a href="https://www.onlinelabels.com/">OnlineLabels.com</a></h2>
-            <ul class="list-unstyled list-columns">
+            <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "OnlineLabels.com" %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
@@ -60,7 +59,7 @@ og_url: https://labelsmerge.com/labels/
         </section>
         <section>
             <h2>Templates compatible with <a href="https://www.herma.com/">Herma</a></h2>
-            <ul class="list-unstyled list-columns">
+            <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "Herma" %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
@@ -74,8 +73,5 @@ og_url: https://labelsmerge.com/labels/
     </div>
     </div>
 </section>
-
-
-
 {%- include reinsurance.html -%}
 </body>
