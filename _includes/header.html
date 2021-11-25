@@ -25,7 +25,9 @@
         }
       </style>
       <a href="/pricing" style="color: white"
-        ><b>Black Friday Limited Offer 🔥 UP TO 50% OFF 🔥 <span id="bf-sales-date"></span></b
+        ><b
+          >Black Friday Limited Offer 🔥 UP TO 50% OFF 🔥
+          <span id="bf-sales-date"></span></b
         ><span
           style="
             max-height: 115px;
@@ -55,18 +57,25 @@
         if (distance < 0) {
           document.getElementById("bf-sales-date").innerHTML = "Offer ended";
         } else if (Math.ceil(distance / (1000 * 3600 * 24)) == 1) {
-          document.getElementById("bf-sales-date").innerHTML = "Offer ends today";
+          document.getElementById("bf-sales-date").innerHTML =
+            "Offer ends today";
         } else if (Math.ceil(distance / (1000 * 3600 * 24)) == 2) {
-          document.getElementById("bf-sales-date").innerHTML = "Offer ends in 1 day";
+          document.getElementById("bf-sales-date").innerHTML =
+            "Offer ends tomorrow";
         } else {
-          document.getElementById("bf-sales-date").innerHTML = "Offer ends in " + days + " days";
+          document.getElementById("bf-sales-date").innerHTML =
+            "Offer ends in " + days + " days";
         }
       </script>
     </div>
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
       <div class="container">
         <a href="/" class="font-weight-bold"
-          ><img src="/assets/images/brand/labelmaker-logo.svg" alt="Labelmaker logo" /> Labelmaker</a
+          ><img
+            src="/assets/images/brand/labelmaker-logo.svg"
+            alt="Labelmaker logo"
+          />
+          Labelmaker</a
         >
         <button
           class="navbar-toggler collapsed"
@@ -85,7 +94,11 @@
         <div class="collapse navbar-collapse" id="navbarTabs">
           <ul class="navbar-nav ml-auto smooth-scroll">
             <li class="nav-item">
-              <a class="font-weight-bold mr-3" href="/guides/how-to-make-labels-google-docs">How to make labels</a>
+              <a
+                class="font-weight-bold mr-3"
+                href="/guides/how-to-make-labels-google-docs"
+                >How to make labels</a
+              >
             </li>
             <li class="nav-item">
               <a class="font-weight-bold mr-3" href="/pricing">Pricing</a>
