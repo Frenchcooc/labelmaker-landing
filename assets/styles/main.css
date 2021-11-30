@@ -17,6 +17,11 @@ section {
   padding: 2.5rem 0;
 }
 
+/* Christmas banner: adding padding to the first section  */
+section:first-of-type {
+  padding: 8rem 0 2.5rem 0;
+}
+
 a {
   transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
   text-decoration: none;
@@ -386,4 +391,14 @@ body {
   body {
     padding-top: 200px;
   } /* add padding on tablet and mobile displays for banner */
+}
+
+/* Christmas offer */
+
+#christmas-banner {
+  background: #2abb9b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 800;
 }
