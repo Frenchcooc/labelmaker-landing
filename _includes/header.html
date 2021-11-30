@@ -1,5 +1,50 @@
 <header>
   <div class="fixed-top">
+    <div id="christmas-banner">
+      <a href="/pricing" style="color: white"
+        ><span>Christmas Limited Offer 🎄 Save $20 on Labelmaker 🎄</b
+        ><span id="christmas-sales-date"></span>
+        <span
+          style="
+            max-height: 115px;
+            border-radius: 4px;
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            display: inline-block;
+            vertical-align: middle;
+            background: white;
+            border: 1px white;
+            color: #2abb9b;
+          "
+          >Get your discount →</span
+        ></a
+      >
+      <!-- Display the countdown timer -->
+      <script>
+        // Set the date we're counting down to
+        let countDownDate = new Date("2021-12-26T07:59:00.000Z").getTime();
+        // Get today's date and time
+        let now = new Date().getTime();
+        // Find the distance between now and the count down date
+        let distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        if (distance < 0) {
+          document.getElementById("christmas-sales-date").innerHTML =
+            "Offer is ending soon";
+        } else if (Math.ceil(distance / (1000 * 3600 * 24)) == 1) {
+          document.getElementById("christmas-sales-date").innerHTML =
+            "Offer ends today";
+        } else if (Math.ceil(distance / (1000 * 3600 * 24)) == 2) {
+          document.getElementById("christmas-sales-date").innerHTML =
+            "Offer ends tomorrow";
+        } else {
+          document.getElementById("christmas-sales-date").innerHTML =
+            "Offer ends in " + days + " days";
+        }
+      </script>
+    </div>
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
       <div class="container">
         <a href="/" class="font-weight-bold"
