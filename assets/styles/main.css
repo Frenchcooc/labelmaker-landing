@@ -363,3 +363,20 @@ sup {
 .guide-section img.no-shadow {
   box-shadow: none;
 }
+
+/* Maintenance banner */
+
+/* adding padding to the first section  */
+section:first-of-type {
+  padding: 8rem 0 2.5rem 0;
+}
+
+/* banner styling */
+
+#maintenance-banner {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 800;
+}
