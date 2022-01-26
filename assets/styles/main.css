@@ -98,13 +98,23 @@ button:hover,
 /* --- Headings --- */
 
 h1 {
-  font-size: 2.7em;
+  font-size: 2.5rem;
   font-weight: 800;
   padding-top: 0.5rem;
 }
 
-h2.heading {
-  font-size: 2.4em;
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
   font-weight: 700;
 }
 
