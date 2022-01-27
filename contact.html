@@ -21,6 +21,8 @@ og_url: https://labelsmerge.com/contact
                     <option value="cancel">💳 Cancel my subscription</option>
                     <option value="help">⛑ I don't understand how to make labels</option>
                     <option value="alignment">🏷 My labels are not lining up correctly</option>
+                    <option value="switch-account">🔎 Merge Fields dropdown is empty </option>
+                    <option value="create-labels">📛 Create Labels button is not working</option>
                     <option value="missing">🕵️‍♂️ My template is missing</option>
                     <option value="sales">⭐️ I want to purchase licenses</option>
                     <option value="feedback">🚀 I want to suggest a feature</option>
@@ -52,8 +54,24 @@ og_url: https://labelsmerge.com/contact
             </fieldset>
 
             <fieldset class="container" data-option="alignment">
-                <h2>How to Fix Misaligned Labels Templates?</h2>
+                <h2>How to fix misaligned labels templates?</h2>
                 <p>If your label templates are not printing correctly or not lining up despite your efforts, check our guide on <a href="/guides/how-to-fix-misaligned-labels">How to Fix Misaligned Labels Templates?</a></p>
+            </fieldset>
+
+            <fieldset class="container" data-option="switch-account">
+                <h2>What can you do when there's nothing available to select in the "Add merge fields" drop down menu?</h2>
+                <p>First of all, make sure that your spreadsheet contains information. The first row should contain headers and the rows should be filled with information (check our guide on <a href="/guides/how-to-make-mailing-list-google">How to make a mailing list in Google Sheets</a>). If the headers or the cells are empty, it might cause your merge fields not to work properly.</p>
+                <p>After checking your spreadsheet, <strong>it's likely that your issue might be due to using multiple Google accounts under the same Chrome browser</strong>. Google can't handle when multiple accounts are logged in, and Chrome extensions, such as Labelmaker, don't work well.</p>
+                <p>We recommend creating a new profile in Google Chrome with the account you are using Labelmaker with. This will make sure it'll always work with the right account. It takes only 1 minute to set up.</p>
+                <p>Learn <a href="https://mailmeteor.com/blog/how-to-create-google-chrome-profile">how to create a new Google Chrome profile</a>.</p>
+                <p>Still having trouble? <a href="javascript:showContactForm()">Contact us</a>, we are here to help.</p>
+            </fieldset>
+
+            <fieldset class="container" data-option="create-labels">
+                <p>After hitting "Create labels" nothing happens? Your issue might be due to using multiple Google accounts under the same Chrome browser</strong>. Google can't handle when multiple accounts are logged in, and Chrome extensions, such as Labelmaker, don't work well.</p>
+                <p>We recommend creating a new profile in Google Chrome with the account you are using Labelmaker with. This will make sure it'll always work with the right account. It takes only 1 minute to set up.</p>
+                <p>Learn <a href="https://mailmeteor.com/blog/how-to-create-google-chrome-profile">how to create a new Google Chrome profile</a>.</p>
+                <p>Alternatively, if your spreadsheet is big (let's say over 10,000 rows) or is filtered, you may need to break it down in smaller parts. Indeed, Google add-on have a limited computing capacity and you may be hitting a limit while trying to generate a large number of labels.</p>
                 <p>Still having trouble? <a href="javascript:showContactForm()">Contact us</a>, we are here to help.</p>
             </fieldset>
     
