@@ -36,14 +36,15 @@ footer {
 
 button,
 .btn {
-  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+  margin: 1em 0 1em 0;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border-radius: 8px;
   font-weight: 400;
   font-size: 1.2em;
-  background-color: #007bff;
-  border-radius: 4px;
-  margin: 1em 0 1em 0;
-  cursor: pointer;
   color: white;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
 }
 
 nav .btn {
@@ -57,7 +58,7 @@ nav .btn {
   text-align: center;
   color: #007bff;
   border: 2px solid;
-  border-radius: 6px;
+  border-radius: 8px;
   border-color: #007bff;
   background-color: white;
   outline: none;
