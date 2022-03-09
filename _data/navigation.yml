@@ -3,8 +3,9 @@
 #
 navbar:
   guide:
-    url: "/guides/how-to-make-labels-google-docs"
+    url-en: "/guides/how-to-make-labels-google-docs"
     en: "How to make labels"
+    url-fr: "/fr/guides/publipostage-etiquettes"
     fr: "Guide du publipostage d'étiquettes"
   pricing:
     url: "/pricing"
@@ -46,8 +47,8 @@ footer:
         en: "About us"
         fr: "A propos"
       lang:
-        en: 'EN / FR'
-        fr: 'FR / EN'
+        en: "EN / FR"
+        fr: "FR / EN"
   ressources:
     title:
       en: "Resources"
@@ -107,24 +108,24 @@ footer:
         en: "Make Christmas labels in Google Docs"
         fr: "Créer des étiquettes de Noël dans Google Docs"
   templates:
-      title:
-        en: "Templates"
-        fr: "Modèles"
-      links:
-        templates:
-          url: "/labels/"
-          en: "Labels templates for Google Docs"
-          fr: "Modèles d'étiquettes pour Google Docs"
+    title:
+      en: "Templates"
+      fr: "Modèles"
+    links:
+      templates:
+        url: "/labels/"
+        en: "Labels templates for Google Docs"
+        fr: "Modèles d'étiquettes pour Google Docs"
   legal:
-      title:
-        en: "Legal"
-        fr: "Légal"
-      links:
-        privacy:
-          url: "/privacy"
-          en: "Privacy"
-          fr: "Confidentialité"
-        privacy:
-          url: "/terms"
-          en: "Terms"
-          fr: "Mentions Légales"
+    title:
+      en: "Legal"
+      fr: "Légal"
+    links:
+      privacy:
+        url: "/privacy"
+        en: "Privacy"
+        fr: "Confidentialité"
+      terms:
+        url: "/terms"
+        en: "Terms"
+        fr: "Mentions Légales"
