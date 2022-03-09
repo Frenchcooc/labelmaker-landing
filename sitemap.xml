@@ -90,9 +90,14 @@
     <lastmod>2021-11-04T13:04:35+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-   <url>
+  <url>
     <loc>https://labelsmerge.com/guides/how-to-fix-misaligned-labels</loc>
     <lastmod>2022-01-26T11:39:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://labelsmerge.com/guides/about</loc>
+    <lastmod>2022-02-19T13:06:44+00:00</lastmod>
     <priority>0.64</priority>
   </url>
 </urlset>

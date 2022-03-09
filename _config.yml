@@ -1,3 +1,9 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+
 collections:
   labels:
     output: true

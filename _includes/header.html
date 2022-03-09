@@ -24,27 +24,23 @@
 
       <div class="collapse navbar-collapse" id="navbarTabs">
         <ul class="navbar-nav ml-auto smooth-scroll">
+          {% for nav in site.data.navigation.navbar %} {% unless nav[0] ==
+          "install" %}
           <li class="nav-item">
-            <a
-              class="font-weight-bold mr-3"
-              href="/guides/how-to-make-labels-google-docs"
-              >How to make labels</a
+            <a class="mr-md-5 font-weight-bold" href="{{ nav[1].url }}"
+              >{{ nav[1][page.lang] }}</a
             >
           </li>
-          <li class="nav-item">
-            <a class="font-weight-bold mr-3" href="/pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="font-weight-bold mr-3" href="/contact">Contact</a>
-          </li>
+          {% endunless %} {% if nav[0] == "install" %}
           <li class="nav-item">
             <a
               class="btn btn-primary"
               href="https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542"
               role="button"
-              >Get started</a
+              >{{ nav[1][page.lang] }}</a
             >
           </li>
+          {% endif %} {% endfor %}
         </ul>
       </div>
     </div>

@@ -8,28 +8,48 @@
           class="mr-2"
         />
         <span class="font-weight-bold"
-          >Labelmaker: Create & print labels for Google Docs</span
+          >{{ site.data.navigation.footer-description[page.lang]title }}</span
         >
         <small class="d-block mb-3"
-          >Labelmaker is an add-on for Google Docs and Google Sheets. All
-          products and company names are trademarks™ or registered® trademarks
-          of their respective holders. Use of them in this website does not
-          imply any affiliation with or endorsement by them. Labelmaker is not
-          affiliated to labels manufacturers.</small
+          >{{ site.data.navigation.footer-description[page.lang]disclaimer
+          }}</small
         >
       </div>
       <div class="col-xs-12 d-flex flex-wrap">
+        {% for nav in site.data.navigation.footer %}
         <ul class="list-unstyled mr-4">
-          <li><span class="font-weight-bold">Company</span></li>
-          <li><a href="/contact">Contact us</a></li>
-          <li><a href="/pricing">Pricing</a></li>
           <li>
-            <a href="https://groups.google.com/g/labelmaker/c/FfjjTdqiZdQ"
-              >Our story</a
-            >
+            <span class="font-weight-bold">{{ nav[1]title[page.lang] }}</span>
           </li>
+          {% assign footerlinks = nav[1].links %} {% for link in footerlinks %}
+          {% if link[1][page.lang] == 'EN / FR' %}
+          <li><a href="/">EN</a> / <a href="/fr/">FR</a></li>
+          {% elsif link[1][page.lang] == 'FR / EN' %}
+          <li><a hrezf="/fr/">FR</a> / <a href="/">EN</a></li>
+          {% elsif link[0] == 'mailmerge' %}
+          <li>
+            <a href="https://mailmeteor.com/"
+              >Mail Merge Gmail
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16px"
+                height="16px"
+              >
+                <path
+                  d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"
+                />
+              </svg>
+            </a>
+            {% else %}
+          </li>
+
+          <li><a href="{{ link[1].url }}">{{ link[1][page.lang] }}</a></li>
+          {% endif %} {% endfor %}
         </ul>
-        <ul class="list-unstyled mr-4">
+        {% endfor %}
+        <!-- <ul class="list-unstyled mr-4">
           <li><span class="font-weight-bold">Ressources</span></li>
           <li><a href="/guides/">Guides & Tutorial</a></li>
           <li>
@@ -110,7 +130,7 @@
           <li><span class="font-weight-bold">Legal</span></li>
           <li><a href="/privacy">Privacy</a></li>
           <li><a href="/terms">Terms</a></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>
