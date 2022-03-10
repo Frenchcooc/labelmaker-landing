@@ -107,6 +107,10 @@ footer:
         url: "/guides/how-to-make-christmas-labels-google-docs"
         en: "Make Christmas labels in Google Docs"
         fr: "Créer des étiquettes de Noël dans Google Docs"
+      how-to-make-wedding-labels-google-docs:
+        url: "/guides/how-to-make-wedding-labels-google-docs"
+        en: "Make Wedding labels in Google Docs"
+        fr: "Créer des étiquettes pour votre mariage dans Google Docs"
   templates:
     title:
       en: "Templates"
