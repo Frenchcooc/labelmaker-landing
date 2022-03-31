@@ -48,9 +48,9 @@ layout: default
 
   {% if page.compatibilities %}
   <div class="container" style="margin-bottom: 2rem">
-    <h2>Other templates compatible with {{ page.name }}</h2>
+    <h2 id="compatible-labels">Other templates compatible with {{ page.name }}</h2>
     {% assign compatibles = page.compatibilities | split: ", " %}
-    <ul class="list-unstyled">
+    <ul class="list-unstyled list-compatible-labels">
       {% for compatible in compatibles %} {% assign path = compatible | replace: " ", "-" | prepend: '_labels/avery-' | append: "-template-google-docs.html" | downcase %} {% assign
       compatible_exist = site.documents | where: "relative_path", path %}
       <li>
@@ -63,12 +63,12 @@ layout: default
       {% endfor %}
     </ul>
     <style>
-      .list-unstyled li {
+      .list-compatible-labels li {
         display: inline-block;
       }
 
-      .list-unstyled li:not(:last-child) a::after,
-      .list-unstyled li:not(:last-child) span::after {
+      .list-compatible-labels li:not(:last-child) a::after,
+      .list-compatible-labels li:not(:last-child) span::after {
         content: ', ';
       }
     </style>
