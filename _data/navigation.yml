@@ -3,18 +3,18 @@
 #
 navbar:
   guide:
-    url-en: "/guides/how-to-make-labels-google-docs"
-    en: "How to make labels"
-    url-fr: "/fr/guides/publipostage-etiquettes"
+    url-en: '/guides/how-to-make-labels-google-docs'
+    en: 'How to make labels'
+    url-fr: '/fr/guides/publipostage-etiquettes'
     fr: "Guide du publipostage d'étiquettes"
   pricing:
-    url: "/pricing"
-    en: "Pricing"
-    fr: "Prix"
+    url: '/pricing'
+    en: 'Pricing'
+    fr: 'Prix'
   install:
-    url: "https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542"
-    en: "Get started"
-    fr: "Installer"
+    url: 'https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542'
+    en: 'Get started'
+    fr: 'Installer'
 
 #
 # Footer
@@ -22,114 +22,138 @@ navbar:
 
 footer-description:
   en:
-    title: "Labelmaker: Create & print labels for Google Docs"
-    disclaimer: "Labelmaker is an add-on for Google Docs and Google Sheets. All products and company names are trademarks™ or registered® trademarks of their respective holders. Use of them in this website does not imply any affiliation with or endorsement by them. Labelmaker is not affiliated to labels manufacturers."
+    title: 'Labelmaker: Create & print labels for Google Docs'
+    disclaimer: 'Labelmaker is an add-on for Google Docs and Google Sheets. All products and company names are trademarks™ or registered® trademarks of their respective holders. Use of them in this website does not imply any affiliation with or endorsement by them. Labelmaker is not affiliated to labels manufacturers.'
   fr:
-    title: "Labelmaker: Créez et imprimez des étiquettes avec Google"
+    title: 'Labelmaker: Créez et imprimez des étiquettes avec Google'
     disclaimer: "Labelmaker est un module complémentaire pour Google Docs et Google Sheets. Tous les noms de produits et de sociétés sont des marques de commerce™ ou des marques déposées® de leurs détenteurs respectifs. Leur utilisation sur ce site Web n'implique aucune affiliation ou approbation de leur part. Labelmaker n'est pas affilié aux fabricants d'étiquettes."
 
 footer:
   company:
     title:
-      en: "Company"
-      fr: "Société"
+      en: 'Company'
+      fr: 'Société'
     links:
       contact:
-        url: "/contact"
-        en: "Contact us"
-        fr: "Nous contacter"
+        url: '/contact'
+        en: 'Contact us'
+        fr: 'Nous contacter'
       pricing:
-        url: "/pricing"
-        en: "Pricing"
-        fr: "Prix"
+        url: '/pricing'
+        en: 'Pricing'
+        fr: 'Prix'
       about:
-        url: "/about"
-        en: "About us"
-        fr: "A propos"
+        url: '/about'
+        en: 'About us'
+        fr: 'A propos'
       lang:
-        en: "EN / FR"
-        fr: "FR / EN"
+        en: 'EN / FR'
+        fr: 'FR / EN'
   ressources:
     title:
-      en: "Resources"
-      fr: "Ressources"
+      en: 'Resources'
+      fr: 'Ressources'
     links:
       guides:
-        url: "/guides/"
-        en: "Guides & tutorial"
-        fr: "Guides"
+        url: '/guides/'
+        en: 'Guides & tutorial'
+        fr: 'Guides'
       forum:
-        url: "https://groups.google.com/forum/#!forum/labelmaker"
-        en: "Forum"
-        fr: "Forum"
+        url: 'https://groups.google.com/forum/#!forum/labelmaker'
+        en: 'Forum'
+        fr: 'Forum'
       avery:
-        url: "/avery-labels-mail-merge"
-        en: "Avery Labels® Mail Merge for Google"
+        url: '/avery-labels-mail-merge'
+        en: 'Avery Labels® Mail Merge for Google'
         fr: "Publipostage d'étiquettes Avery Labels®"
       mailmerge:
-        url: "https://mailmeteor.com/"
-        en: "Mail Merge for Gmail"
+        url: 'https://mailmeteor.com/'
+        en: 'Mail Merge for Gmail'
         fr: "Publipostage d'emails avec Gmail"
   howto:
     title:
-      en: "How to"
+      en: 'How to'
       fr: "Guides d'utilisation"
     links:
       how-to-make-labels-google-docs:
-        url: "/guides/how-to-make-labels-google-docs"
-        en: "Make labels in Google Docs"
-        fr: "Réaliser un publipostage avec Google Docs"
+        url: '/guides/how-to-make-labels-google-docs'
+        en: 'Make labels in Google Docs'
+        fr: 'Réaliser un publipostage avec Google Docs'
       how-to-print-labels-mailing-list-google-sheets:
-        url: "/guides/how-to-print-labels-mailing-list-google-sheets"
-        en: "Print labels for a mailing list in Google Sheets"
-        fr: "Imprimer des étiquettes pour une liste de diffusion"
+        url: '/guides/how-to-print-labels-mailing-list-google-sheets'
+        en: 'Print labels for a mailing list in Google Sheets'
+        fr: 'Imprimer des étiquettes pour une liste de diffusion'
       how-to-fix-misaligned-labels:
-        url: "/guides/how-to-fix-misaligned-labels"
-        en: "Fix misaligned labels templates"
-        fr: "Corriger des étiquettes mal alignées"
+        url: '/guides/how-to-fix-misaligned-labels'
+        en: 'Fix misaligned labels templates'
+        fr: 'Corriger des étiquettes mal alignées'
       how-to-make-mailing-list-google:
-        url: "/guides/how-to-make-mailing-list-google"
-        en: "Make a mailing list in Google Sheets"
-        fr: "Créer une liste de diffusion dans Google Sheets"
+        url: '/guides/how-to-make-mailing-list-google'
+        en: 'Make a mailing list in Google Sheets'
+        fr: 'Créer une liste de diffusion dans Google Sheets'
       how-to-create-labels-google-docs:
-        url: "/guides/how-to-create-labels-google-docs"
-        en: "Create plain labels in Google Docs"
-        fr: "Créer des étiquettes simples dans Google Docs"
+        url: '/guides/how-to-create-labels-google-docs'
+        en: 'Create plain labels in Google Docs'
+        fr: 'Créer des étiquettes simples dans Google Docs'
       how-to-add-images-labels-google-docs:
-        url: "/guides/how-to-add-images-labels-google-docs"
-        en: "Add images to labels in Google Docs"
-        fr: "Ajouter des images aux étiquettes dans Google Docs"
+        url: '/guides/how-to-add-images-labels-google-docs'
+        en: 'Add images to labels in Google Docs'
+        fr: 'Ajouter des images aux étiquettes dans Google Docs'
       how-to-print-envelope-google-docs:
-        url: "/guides/how-to-print-envelope-google-docs"
-        en: "Print an envelope in Google Docs"
-        fr: "Imprimer une enveloppe dans Google Docs"
+        url: '/guides/how-to-print-envelope-google-docs'
+        en: 'Print an envelope in Google Docs'
+        fr: 'Imprimer une enveloppe dans Google Docs'
       how-to-make-christmas-labels-google-docs:
-        url: "/guides/how-to-make-christmas-labels-google-docs"
-        en: "Make Christmas labels in Google Docs"
-        fr: "Créer des étiquettes de Noël dans Google Docs"
+        url: '/guides/how-to-make-christmas-labels-google-docs'
+        en: 'Make Christmas labels in Google Docs'
+        fr: 'Créer des étiquettes de Noël dans Google Docs'
       how-to-make-wedding-labels-google-docs:
-        url: "/guides/how-to-make-wedding-labels-google-docs"
-        en: "Make Wedding labels in Google Docs"
-        fr: "Créer des étiquettes pour votre mariage dans Google Docs"
+        url: '/guides/how-to-make-wedding-labels-google-docs'
+        en: 'Make Wedding labels in Google Docs'
+        fr: 'Créer des étiquettes pour votre mariage dans Google Docs'
   templates:
     title:
-      en: "Templates"
-      fr: "Modèles"
+      en: 'Templates'
+      fr: 'Modèles'
     links:
       templates:
-        url: "/labels/"
-        en: "Labels templates for Google Docs"
+        url: '/labels/'
+        en: 'Labels templates for Google Docs'
         fr: "Modèles d'étiquettes pour Google Docs"
+      avery5160:
+        url: '/labels/avery-5160-template-google-docs'
+        en: 'Template for Avery® 5160'
+        fr: 'Template pour Avery® 5160'
+      avery8160:
+        url: '/labels/avery-8160-template-google-docs'
+        en: 'Template for Avery® 8160'
+        fr: 'Template pour Avery® 8160'
+      avery5613:
+        url: '/labels/avery-5163-template-google-docs'
+        en: 'Template for Avery® 5163'
+        fr: 'Template pour Avery® 5163'
+      avery5162:
+        url: '/labels/avery-5162-template-google-docs'
+        en: 'Template for Avery® 5162'
+        fr: 'Template pour Avery® 5162'
+      avery3475:
+        url: '/labels/avery-3475-template-google-docs'
+        en: 'Template for Avery® 3475 (A4)'
+        fr: 'Template pour Avery® 3475 (A4)'
+      avery18660:
+        url: '/labels/avery-18660-template-google-docs'
+        en: 'Template for Avery® 18660'
+        fr: 'Template pour Avery® 18660'
   legal:
     title:
-      en: "Legal"
-      fr: "Légal"
+      en: 'Legal'
+      fr: 'Légal'
     links:
       privacy:
-        url: "/privacy"
-        en: "Privacy"
-        fr: "Confidentialité"
+        url: '/privacy'
+        en: 'Privacy'
+        fr: 'Confidentialité'
       terms:
-        url: "/terms"
-        en: "Terms"
-        fr: "Mentions Légales"
+        url: '/terms'
+        en: 'Terms'
+        fr: 'Mentions Légales'

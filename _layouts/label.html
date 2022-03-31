@@ -14,16 +14,12 @@ layout: default
     </ul>
   </nav>
   <div class="container text-center pb-3">
-    <h1>Template for Google Docs compatible with {{ page.name }}</h1>
+    <h1 style="max-width: 800px; margin-left: auto; margin-right: auto">Template for Google Docs compatible with {{ page.name }}</h1>
     <p class="col-md-9 mx-auto subheading">Find the most popular label templates for Google Docs & Google Sheets.</p>
   </div>
   <div class="container text-center">
     <div>
-      <iframe
-        class="w-100"
-        style="min-height: 500px; border: 1px solid #eee; border-radius: 8px"
-        src="{{ page.document }}"
-      ></iframe>
+      <iframe class="w-100" style="min-height: 500px; border: 1px solid #eee; border-radius: 8px" src="{{ page.document }}"></iframe>
     </div>
     <div>
       <a class="btn btn-filled mb-5" href="{{ page.document }}" role="button" style="font-size: 1.2em; font-weight: 600"
@@ -32,35 +28,58 @@ layout: default
     </div>
   </div>
 
+  <div class="container" style="margin-bottom: 2rem">
+    <h2>Download for Word</h2>
+    <p>
+      <a href="https://docs.google.com/document/export?format=docx&id={{ productid }}&includes_info_params=true" target="_blank"
+        >Download Microsoft Word template compatible with {{ page.name }}</a
+      >
+    </p>
+  </div>
+
+  <div class="container" style="margin-bottom: 2rem">
+    <h2>Dowload in PDF</h2>
+    <p>
+      <a href="https://docs.google.com/document/export?format=pdf&id={{ productid }}&includes_info_params=true" target="_blank"
+        >Download PDF file compatible with {{ page.name }}</a
+      >
+    </p>
+  </div>
+
   {% if page.compatibilities %}
   <div class="container" style="margin-bottom: 2rem">
-    <h2>Other Templates Compatible</h2>
-    <p>{{ page.compatibilities }}</p>
+    <h2>Other templates compatible with {{ page.name }}</h2>
+    {% assign compatibles = page.compatibilities | split: ", " %}
+    <ul class="list-unstyled">
+      {% for compatible in compatibles %} {% assign path = compatible | replace: " ", "-" | prepend: '_labels/avery-' | append: "-template-google-docs.html" | downcase %} {% assign
+      compatible_exist = site.documents | where: "relative_path", path %}
+      <li>
+        {% if compatible_exist and compatible_exist.size != 0 %}
+        <a href='{{ path | replace: "_labels/", "/labels/" }}'>{{ compatible }}</a>
+        {%else%}
+        <span>{{ compatible }}</span>
+        {%endif%}
+      </li>
+      {% endfor %}
+    </ul>
+    <style>
+      .list-unstyled li {
+        display: inline-block;
+      }
+
+      .list-unstyled li:not(:last-child) a::after,
+      .list-unstyled li:not(:last-child) span::after {
+        content: ', ';
+      }
+    </style>
   </div>
   {% endif %}
-
-  <div class="container" style="margin-bottom: 2rem">
-    <h2>Word</h2>
-    <p><a
-    href="https://docs.google.com/document/export?format=docx&id={{ productid }}&includes_info_params=true"
-    target="_blank"
-    >Download Microsoft Word template compatible with {{ page.name }}</a></p>
-  </div>
-
-  <div class="container" style="margin-bottom: 2rem">
-    <h2>PDF</h2>
-    <p><a
-    href="https://docs.google.com/document/export?format=pdf&id={{ productid }}&includes_info_params=true""
-    target="_blank"
-    >Download PDF file compatible with {{ page.name }}</a></p>
-  </div>
 
   <div class="container">
     <h2>Disclaimer</h2>
     <p>
-      Templates provided herein are compatible with different labels providers, including Avery®, SheetLabels.com,
-      OnlineLabels.com, Herma and others. All products and company names are trademarks™ or registered® trademarks of
-      their respective holders. Use of them in this website does not imply any affiliation with or endorsement by them.
+      Templates provided herein are compatible with different labels providers, including Avery®, SheetLabels.com, OnlineLabels.com, Herma and others. All products and company
+      names are trademarks™ or registered® trademarks of their respective holders. Use of them in this website does not imply any affiliation with or endorsement by them.
       <strong>Labelmaker is not affiliated with those providers.</strong>
     </p>
   </div>
@@ -69,12 +88,12 @@ layout: default
 {%- include reinsurance.html -%}
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "DigitalDocument",
-  "name": "{{ page.name }}",
-  "creator": "Labelmaker",
-  "url": "{{ page.document }}",
-  "discussionUrl": "{{ page.document }}"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "DigitalDocument",
+    "name": "{{ page.name }}",
+    "creator": "Labelmaker",
+    "url": "{{ page.document }}",
+    "discussionUrl": "{{ page.document }}"
+  }
 </script>
