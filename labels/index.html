@@ -13,7 +13,7 @@ og_url: https://labelsmerge.com/labels/
     </div>
     <div class="container">
         <section>
-            <h2>Top 10 Most Popular Labels</h2>
+            <h2 id="most-popular">Top 10 Most Popular Labels</h2>
             <p>Those are the most popular labels in the US. Click to download.</p>
             <ol class="list-columns" style="line-height:200%">
                 <li><a href="/labels/avery-5160-template-google-docs">Avery® 5160 - Address Labels</a></li>
@@ -30,7 +30,7 @@ og_url: https://labelsmerge.com/labels/
             <p class="text-center font-italic">Scroll down to see all our templates</p>
         </section>
         <section>
-            <h2>Templates compatible with <a href="https://www.avery.com/">Avery®</a></h2>
+            <h2 id="avery">Templates compatible with <a href="https://www.avery.com/">Avery®</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "Avery" %}
@@ -40,7 +40,7 @@ og_url: https://labelsmerge.com/labels/
             </ul>
         </section>
         <section>
-            <h2>Templates compatible with <a href="https://www.sheetlabels.com/">SheetLabels.com</a></h2>
+            <h2 id="sheetlabels-com">Templates compatible with <a href="https://www.sheetlabels.com/">SheetLabels.com</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "SheetLabels.com" %}
@@ -50,7 +50,7 @@ og_url: https://labelsmerge.com/labels/
             </ul>
         </section>
         <section>
-            <h2>Templates compatible with <a href="https://www.onlinelabels.com/">OnlineLabels.com</a></h2>
+            <h2 id="onlinelabels-com">Templates compatible with <a href="https://www.onlinelabels.com/">OnlineLabels.com</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "OnlineLabels.com" %}
@@ -60,7 +60,7 @@ og_url: https://labelsmerge.com/labels/
             </ul>
         </section>
         <section>
-            <h2>Templates compatible with <a href="https://www.herma.com/">Herma</a></h2>
+            <h2 id="herma">Templates compatible with <a href="https://www.herma.com/">Herma</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
                 {% for label in site.labels %}
                     {% if label.vendor == "Herma" %}

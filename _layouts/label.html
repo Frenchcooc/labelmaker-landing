@@ -46,6 +46,13 @@ layout: default
     </p>
   </div>
 
+  {% if page.snippet %}
+  <div class="container" style="margin-bottom: 2rem">
+    <h2>Label description</h2>
+    <p>{{ page.snippet | markdownify }}</p>
+  </div>
+  {% endif %}
+  
   {% if page.compatibilities %}
   <div class="container" style="margin-bottom: 2rem">
     <h2 id="compatible-labels">Other templates compatible with {{ page.name }}</h2>
