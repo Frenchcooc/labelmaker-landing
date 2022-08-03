@@ -7,6 +7,10 @@ navbar:
     en: 'How to make labels'
     url-fr: '/fr/guides/publipostage-etiquettes'
     fr: "Guide du publipostage d'étiquettes"
+  templates:
+    url: '/labels/'
+    en: 'Templates'
+    fr: 'Modèles'
   pricing:
     url: '/pricing'
     en: 'Pricing'
