@@ -2,18 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <img
-          src="/assets/images/brand/labelmaker-logo.svg"
-          alt="Labelmaker logo"
-          class="mr-2"
-        />
-        <span class="font-weight-bold"
-          >{{ site.data.navigation.footer-description[page.lang]title }}</span
-        >
-        <small class="d-block mb-3"
-          >{{ site.data.navigation.footer-description[page.lang]disclaimer
-          }}</small
-        >
+        <img src="/assets/images/brand/labelmaker-logo.svg" alt="Labelmaker logo" class="mr-2" />
+        <span class="font-weight-bold">{{ site.data.navigation.footer-description[page.lang]title }}</span>
+        <small class="d-block mb-3">{{ site.data.navigation.footer-description[page.lang]disclaimer }}</small>
       </div>
       <div class="col-xs-12 d-flex flex-wrap flex-lg-nowrap">
         {% for nav in site.data.navigation.footer %}
@@ -21,8 +12,7 @@
           <li>
             <span class="font-weight-bold">{{ nav[1]title[page.lang] }}</span>
           </li>
-          {% assign footerlinks = nav[1].links %} {% for link in footerlinks %}
-          {% if link[1][page.lang] == 'EN / FR' %}
+          {% assign footerlinks = nav[1].links %} {% for link in footerlinks %} {% if link[1][page.lang] == 'EN / FR' %}
           <li><a href="/">EN</a> / <a href="/fr/">FR</a></li>
           {% elsif link[1][page.lang] == 'FR / EN' %}
           <li><a href="/fr/">FR</a> / <a href="/">EN</a></li>
@@ -30,13 +20,7 @@
           <li>
             <a href="https://mailmeteor.com/"
               >Mail Merge Gmail
-              <svg
-                fill="#000000"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="16px"
-                height="16px"
-              >
+              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px">
                 <path
                   d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"
                 />
@@ -49,88 +33,6 @@
           {% endif %} {% endfor %}
         </ul>
         {% endfor %}
-        <!-- <ul class="list-unstyled mr-4">
-          <li><span class="font-weight-bold">Ressources</span></li>
-          <li><a href="/guides/">Guides & Tutorial</a></li>
-          <li>
-            <a href="https://groups.google.com/forum/#!forum/labelmaker"
-              >Forum</a
-            >
-          </li>
-          <li>
-            <a href="/avery-labels-mail-merge"
-              >Avery Labels® Mail Merge for Google</a
-            >
-          </li>
-          <li>
-            <a href="https://mailmeteor.com/"
-              >Mail Merge for Gmail
-              <svg
-                fill="#000000"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="16px"
-                height="16px"
-              >
-                <path
-                  d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <ul class="list-unstyled mr-4">
-          <li><span class="font-weight-bold">How to</span></li>
-          <li>
-            <a href="/guides/how-to-make-labels-google-docs"
-              >Make labels in Google Docs</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-print-labels-mailing-list-google-sheets"
-              >Print labels for a mailing list in Google Sheets</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-fix-misaligned-labels"
-              >Fix misaligned labels templates</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-make-mailing-list-google"
-              >Make a mailing list in Google Sheets</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-create-labels-google-docs"
-              >Create plain labels in Google Docs</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-add-images-labels-google-docs"
-              >Add images to labels in Google Docs</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-print-envelope-google-docs"
-              >Print an envelope in Google Docs</a
-            >
-          </li>
-          <li>
-            <a href="/guides/how-to-make-christmas-labels-google-docs"
-              >Make Christmas labels in Google Docs</a
-            >
-          </li>
-        </ul>
-        <ul class="list-unstyled mr-4">
-          <li><span class="font-weight-bold">Templates</span></li>
-          <li><a href="/labels/">Labels templates for Google Docs</a></li>
-        </ul>
-        <ul class="list-unstyled mr-4">
-          <li><span class="font-weight-bold">Legal</span></li>
-          <li><a href="/privacy">Privacy</a></li>
-          <li><a href="/terms">Terms</a></li>
-        </ul> -->
       </div>
     </div>
   </div>
