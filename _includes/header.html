@@ -1,7 +1,8 @@
 <div id="banner">
   <style>
     #banner {
-      background: #000000;
+      /* background: #000000; */
+      background: #2abb9b;
       color: white;
       text-align: center;
       font-weight: 800;
@@ -9,43 +10,22 @@
     }
   </style>
   <a href="/pricing" style="color: white"
-    ><b>Cyber Monday Limited Offer 🔥 UP TO 50% OFF 🔥 <span id="bf-sales-date"></span></b
+    ><b>🎄 Christmas Sale Now On! 🎄</b
     ><span
       style="
         max-height: 115px;
-        border: 2px solid;
         border-radius: 4px;
         padding: 0.3rem;
         margin-left: 0.5rem;
         display: inline-block;
         vertical-align: middle;
         background: white;
-        color: black;
+        border: 1px white;
+        color: #2abb9b;
       "
-      >Get your discount →</span
+      >Get your special discount →</span
     ></a
   >
-  <!-- Display the countdown timer -->
-  <script>
-    // Set the date we're counting down to
-    let countDownDate = new Date('2022-11-26T07:59:00.000Z').getTime();
-    // Get today's date and time
-    let now = new Date().getTime();
-    // Find the distance between now and the count down date
-    let distance = countDownDate - now;
-    // Time calculations for days, hours, minutes and seconds
-    let days = Math.round(distance / (1000 * 60 * 60 * 24));
-
-    if (distance < 0) {
-      document.getElementById('bf-sales-date').innerHTML = 'Offer is ending soon';
-    } else if (Math.ceil(distance / (1000 * 60 * 60 * 24)) == 1) {
-      document.getElementById('bf-sales-date').innerHTML = 'Offer ends today';
-    } else if (Math.ceil(distance / (1000 * 60 * 60 * 24)) == 2) {
-      document.getElementById('bf-sales-date').innerHTML = 'Offer ends tomorrow';
-    } else {
-      document.getElementById('bf-sales-date').innerHTML = 'Offer ends in ' + days + ' days';
-    }
-  </script>
 </div>
 <header class="fixed-top" style="position: sticky">
   <nav class="navbar navbar-expand-md navbar-light" id="navbar">
