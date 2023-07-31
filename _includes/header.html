@@ -1,5 +1,5 @@
 <header class="fixed-top" style="position: sticky">
-  <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-between" id="navbar">
     <div class="container">
       <a href="/" class="font-weight-bold"><img src="/assets/images/brand/labelmaker-logo.svg" alt="Labelmaker logo" /> Labelmaker</a>
       <button
@@ -16,28 +16,26 @@
         <span class="icon-bar bottom-bar"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarTabs">
-        <ul class="navbar-nav ml-auto smooth-scroll">
-          {% for nav in site.data.navigation.navbar %} {% unless nav[0] == "install" %} {% if nav[0] == "guide" and page.lang == "en" %}
+      <div class="collapse navbar-collapse text-center" id="navbarTabs">
+        <ul class="navbar-nav mx-auto">
+          {% for nav in site.data.navigation.navbar %} {% if nav[0] == "guide" and page.lang == "en" %}
           <li class="nav-item">
-            <a class="mr-md-5 font-weight-bold" href="{{ nav[1].url-en }}">{{ nav[1][page.lang] }}</a>
+            <a class="mr-md-4" href="{{ nav[1].url-en }}">{{ nav[1][page.lang] }}</a>
           </li>
           {% elsif nav[0] == "guide" and page.lang == "fr" %}
           <li class="nav-item">
-            <a class="mr-md-5 font-weight-bold" href="{{ nav[1].url-fr }}">{{ nav[1][page.lang] }}</a>
+            <a class="mr-md-4" href="{{ nav[1].url-fr }}">{{ nav[1][page.lang] }}</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="mr-md-5 font-weight-bold" href="{{ nav[1].url }}">{{ nav[1][page.lang] }}</a>
+            <a class="mr-md-4" href="{{ nav[1].url }}">{{ nav[1][page.lang] }}</a>
           </li>
-          {% endif %} {% endunless %} {% if nav[0] == "install" %}
-          <li class="nav-item">
-            <a class="btn btn-primary" href="https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542" role="button"
-              >{{ nav[1][page.lang] }}</a
-            >
-          </li>
-          {% endif %} {% endfor %}
+          {% endif %}
+          {% endfor %}
         </ul>
+        <a class="btn btn-primary" href="https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542" role="button"
+          >Add to Google Docs</a
+        >
       </div>
     </div>
   </nav>

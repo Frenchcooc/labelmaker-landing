@@ -6,20 +6,33 @@
     {%- include header.html -%} {{ content }} {%- include footer.html -%}
 
     <!-- Bootstrap scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="/assets/js/jquery.3.5.1.slim.min.js" defer></script>
+    <script src="/assets/js/popper.1.16.0.min.js" defer></script>
+    <script src="/assets/js/bootstrap.4.5.0.min.js" defer></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "applicationCategory": "BusinessApplication",
+        "applicationSuite": "Google Workspace",
+        "installUrl": "https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542",
+        "operatingSystem": " Windows 7, OSX 10.6, Linux",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "11189"
+        },
+        "headline": "Create and print labels in Google Docs",
+        "description": "Labelmaker helps you mail merge labels with Google Docs & Sheets. Print mailing labels from a wide choice of label manufacturers, including Avery, Herma, SheetLabels and more.",
+        "name": "Labelmaker",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+      </script>
   </body>
 </html>

@@ -4,21 +4,21 @@
 navbar:
   guide:
     url-en: '/guides/how-to-make-labels-google-docs'
-    en: 'How to make labels'
+    en: 'How to make labels?'
     url-fr: '/fr/guides/publipostage-etiquettes'
     fr: "Guide du publipostage d'étiquettes"
   templates:
     url: '/labels/'
-    en: 'Templates'
-    fr: 'Modèles'
+    en: 'Label Templates'
+    fr: "Modèles d'étiquettes"
+  tutorials:
+    url: '/guides/'
+    en: 'Tutorials'
+    fr: 'Tutoriels'
   pricing:
     url: '/pricing'
     en: 'Pricing'
     fr: 'Prix'
-  install:
-    url: 'https://workspace.google.com/marketplace/app/create_print_labels_label_maker_for_aver/585829216542'
-    en: 'Get started'
-    fr: 'Installer'
 
 #
 # Footer

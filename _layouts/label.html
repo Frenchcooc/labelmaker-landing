@@ -6,10 +6,20 @@ layout: default
 
 <section>
   <nav aria-label="breadcrumb">
-    <ul class="container breadcrumb">
-      <li><a href="/labels/">Templates</a></li>
-      <li>
-        <a class="font-weight-bold" href="#">Compatible with {{ page.name }}</a>
+    <ul class="container breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/labels/" itemprop="item">
+          <span itemprop="name">Templates</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a class="font-weight-bold" href="{{ page.url | replace: ".html", "" }}">
+          <span itemprop="name">
+            Compatible with {{ page.name }}
+          </span>
+        </a>
+        <meta itemprop="position" content="2" />
       </li>
     </ul>
   </nav>
