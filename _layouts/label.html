@@ -22,7 +22,7 @@ layout: default
       <iframe class="w-100" style="min-height: 500px; border: 1px solid #eee; border-radius: 8px" src="{{ page.document }}"></iframe>
     </div>
     <div>
-      <a class="btn btn-filled mb-5" href="{{ page.document }}" role="button" style="font-size: 1.2em; font-weight: 600"
+      <a class="btn btn-filled mb-5" href="https://docs.google.com/document/d/{{ productid }}/copy" role="button" style="font-size: 1.2em; font-weight: 600"
         >Download free template for Google Docs compatible with {{ page.name }}</a
       >
     </div>
@@ -62,7 +62,7 @@ layout: default
       compatible_exist = site.documents | where: "relative_path", path %}
       <li>
         {% if compatible_exist and compatible_exist.size != 0 %}
-        <a href='{{ path | replace: "_labels/", "/labels/" }}'>{{ compatible }}</a>
+        <a href='{{ path | replace: "_labels/", "/labels/" | replace: ".html", "" }}'>{{ compatible }}</a>
         {%else%}
         <span>{{ compatible }}</span>
         {%endif%}
