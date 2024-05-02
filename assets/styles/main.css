@@ -375,3 +375,12 @@ sup {
 .guide-section img.no-shadow {
   box-shadow: none;
 }
+
+.guide-section-hero-footer {
+  padding-top: 0;
+}
+
+.guide-section-hero-footer > .container {
+  border-top: 1px solid #EBECEE;
+  padding-top: 2.5rem;
+}
