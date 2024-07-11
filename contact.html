@@ -15,10 +15,11 @@ og_url: https://labelsmerge.com/contact
     <div class="container">
         <form autocomplete="off" class="support-form text-center" id="support-form">
             <fieldset class="container">
-                <label><strong>What can we help you with today?</strong></label>
+                <label><strong>How can we help you?</strong></label>
                 <select class="form-control mb-3" id="support-form-options">
                     <option disabled selected>Select a topic...</option>
                     <option value="cancel">💳 Cancel my subscription</option>
+                    <!-- <option value="switch">🔄 Switch my license to another email address</option> -->
                     <option value="help">⛑ I don't understand how to make labels</option>
                     <option value="alignment">🏷 My labels are not lining up correctly</option>
                     <option value="switch-account">🔎 Merge Fields dropdown is empty </option>
@@ -39,6 +40,23 @@ og_url: https://labelsmerge.com/contact
                     <li>Then confirm by clicking on <strong>Cancel plan</strong></li>
                 </ol>
                 <p>Still having trouble? <a href="javascript:showContactForm()">Contact us</a>, we are here to help.</p>
+            </fieldset>
+
+            <fieldset class="container" data-option="switch">
+                <h2>How to switch your license from one account to another?</h2>
+                <p>Fill out this form to transfer your license from one account to another. To prevent abuse, only one transfer per user per day is allowed.</p>
+                <div class="form-group">
+                    <label for="switchOldEmail">Previous email address:</label>
+                    <input id="switchOldEmail" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="switchNewEmail">New email address:</label>
+                    <input id="switchNewEmail" type="text" class="form-control">
+                    <small class="form-text text-muted">The license will be transferred to this email address.</small>
+                </div>
+                <div id="switchAction">
+                    <button type="submit" class="btn btn-primary" onclick="switchLicense(event)">Switch license</button>
+                </div>
             </fieldset>
     
             <fieldset class="container" data-option="help">
@@ -121,6 +139,15 @@ function showSupportItem(selectedOption, hideOthers) {
     if (selectedOption === 'sales') {
         showContactForm()
     }
+
+    // Set the selected option (useful when set programmatically)
+    var select = document.getElementById('support-form-options')
+    if (select && selectedOption && select.value !== selectedOption) {
+        select.value = selectedOption
+    }
+
+    // Useful for linking
+    document.location.hash = selectedOption
 }
 
 function showContactForm() {
@@ -135,12 +162,54 @@ document.getElementById('support-form-options').onchange = function () {
 
 // Initialize 
 function initiliazeSupportForm() {
-    showSupportItem("", true);
+    const startItem = document.location.hash.split('#').pop() || ''
+    showSupportItem(startItem, true)
     console.log("initialized")
 }
 
 initiliazeSupportForm()
 
+// Switch license
+async function switchLicense(e) {
+    e.preventDefault();
+
+    const oldEmailInput = document.getElementById('switchOldEmail')
+    const newEmailInput = document.getElementById('switchNewEmail')
+    
+    const oldEmailAddress = oldEmailInput.value
+    const newEmailAddress = newEmailInput.value
+
+    // Input validation
+    const isValid1 = switchValidateEmailAddress(oldEmailInput)
+    const isValid2 = switchValidateEmailAddress(newEmailInput)
+    const isValid = isValid1 && isValid2
+
+    if (!isValid) return
+
+    // Make requests (without waiting for response)
+    fetch('https://us-central1-labels-maker-263311.cloudfunctions.net/support/switch', {
+        method: 'POST',
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ oldEmailAddress, newEmailAddress })
+    })
+
+    // Feedback form
+    const feedback = document.getElementById('switchAction')
+    feedback.innerHTML = `<div class="alert alert-info">We have received your request. If the email address "${oldEmailAddress}" has a license attached to it, it will be transferred to the new email address in a few minutes.</div>`
+}
+
+function switchValidateEmailAddress(input) {
+    const emailAddress = input.value
+
+    if (!emailAddress || emailAddress.indexOf('@') < 1) {
+        input.classList.add('is-invalid')
+        return false 
+    }
+    else {
+        input.classList.remove('is-invalid')
+        return true
+    }
+}
 </script>
 
 <style>
