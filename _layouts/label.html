@@ -2,70 +2,105 @@
 layout: default
 ---
 
-{% assign productid = page.document | replace: "https://docs.google.com/open?id=", "" %}
+{% assign documentId = page.document | replace: "https://docs.google.com/open?id=", "" %}
+{%- assign downloadURLGoogleDocs = "https://docs.google.com/document/copy?&id=" | append: documentId -%}
+{%- assign downloadURLPDF = "https://docs.google.com/document/export?id=" | append: documentId | append: "&format=pdf&includes_info_params=true" -%}
+{%- assign downloadURLWord = "https://docs.google.com/document/export?id=" | append: documentId | append: "&format=docx&includes_info_params=true" -%}
 
+<style>
+  .document-preview {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #F9FBFD;
+  }
+
+  .document-preview-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    text-align: left;
+  }
+</style>
 <section>
   <nav aria-label="breadcrumb">
-    <ul class="container breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="/labels/" itemprop="item">
-          <span itemprop="name">Templates</span>
-        </a>
-        <meta itemprop="position" content="1" />
+    <ul class="container breadcrumb">
+      <li>
+        <a href="/labels/" itemprop="item">Templates</a>
       </li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a class="font-weight-bold" href="{{ page.url | replace: ".html", "" }}">
-          <span itemprop="name">
-            Compatible with {{ page.name }}
-          </span>
-        </a>
-        <meta itemprop="position" content="2" />
+      <li>
+        <a class="font-weight-bold" href="/labels/">Compatible with {{ page.vendor }}</a>
       </li>
     </ul>
   </nav>
   <div class="container text-center pb-3">
     <h1 style="max-width: 800px; margin-left: auto; margin-right: auto">Template for Google Docs compatible with {{ page.name }}</h1>
-    <p class="col-md-9 mx-auto subheading">Find the most popular label templates for Google Docs & Google Sheets.</p>
+    <p class="col-md-9 mx-auto subheading">Find the most popular label templates for Google Docs, Word, PDF.</p>
   </div>
-  <div class="container text-center">
-    <div>
-      <iframe class="w-100" style="min-height: 500px; border: 1px solid #eee; border-radius: 8px" src="{{ page.document }}"></iframe>
-    </div>
-    <div>
-      <a class="btn btn-filled mb-5" href="https://docs.google.com/document/d/{{ productid }}/copy" role="button" style="font-size: 1.2em; font-weight: 600"
-        >Download free template for Google Docs compatible with {{ page.name }}</a
-      >
+
+  <div class="container text-center mb-5">
+    <div class="document-preview">
+      <div class="document-preview-heading">
+        <div style="max-width: 50%">
+          <div class="text-ellipsis" style="font-weight: bold;">Labels template compatible with "{{ page.name }}" Labels template compatible with "{{ page.name }}" Labels template compatible with "{{ page.name }}"</div>
+          <div class="text-muted">By labelsmerge.com</div>
+        </div>
+    
+        <div class="btn-group" role="group" aria-label="Download options">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Download template</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="{{ downloadURLWord }}">Download as .DOCX</a>
+              <a class="dropdown-item" href="{{ downloadURLPDF }}">Download as .PDF</a>
+              <a class="dropdown-item" href="{{ downloadURLGoogleDocs }}" target="_blank">Edit in Google Docs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe class="w-100" style="border:0; min-height: 500px;" src="https://docs.google.com/document/d/{{ documentId }}/preview"></iframe>
     </div>
   </div>
 
-  <div class="container" style="margin-bottom: 2rem">
-    <h2>Download for Word</h2>
-    <p>
-      <a href="https://docs.google.com/document/export?format=docx&id={{ productid }}&includes_info_params=true" target="_blank"
-        >Download Microsoft Word template compatible with {{ page.name }}</a
-      >
-    </p>
-  </div>
-
-  <div class="container" style="margin-bottom: 2rem">
-    <h2>Dowload in PDF</h2>
-    <p>
-      <a href="https://docs.google.com/document/export?format=pdf&id={{ productid }}&includes_info_params=true" target="_blank"
-        >Download PDF template compatible with {{ page.name }}</a
-      >
-    </p>
+  <div class="container text-center my-5">
+    <h2 class="mb-5">Download this template in all formats</h2>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <div class="mb-3">
+          <img src="/assets/images/elements/microsoft-word-logo.png" height="64" alt="Microsoft Word Logo">
+        </div>
+        <h4>Microsoft Word</h4>
+        <p style="margin: 0.5rem auto; font-size: 0.85rem; max-width: 60%">To create labels in Microsoft Word 2007 or later</p>
+        <a href="{{ downloadURLWord }}" target="_blank" class="btn btn-primary mt-1" style="width: 80%">Download .DOCX</a>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <div class="mb-3">
+          <img src="/assets/images/elements/pdf-logo.png" height="64" alt="PDF Logo">
+        </div>
+        <h4>PDF</h4>
+        <p style="margin: 0.5rem auto; font-size: 0.85rem; max-width: 60%">To create labels with your printer at any time</p>
+        <a href="{{ downloadURLPDF }}" target="_blank" class="btn btn-primary mt-1" style="width: 80%">Download .PDF</a>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <div class="mb-3">
+          <img src="/assets/images/elements/google-docs-logo.png" height="64" alt="Google Docs Logo">
+        </div>
+        <h4>Google Docs</h4>
+        <p style="margin: 0.5rem auto; font-size: 0.85rem; max-width: 60%">To create labels in any version of Google Docs.</p>
+        <a href="{{ downloadURLGoogleDocs }}" target="_blank" class="btn btn-primary mt-1" style="width: 80%">Edit in Google Docs</a>
+      </div>
+    </div>
   </div>
 
   {% if page.snippet %}
-  <div class="container" style="margin-bottom: 2rem">
+  <div class="container my-5">
     <h2>Label description</h2>
     <p>{{ page.snippet | markdownify }}</p>
   </div>
   {% endif %}
   
   {% if page.compatibilities %}
-  <div class="container" style="margin-bottom: 2rem">
-    <h2 id="compatible-labels">Other templates compatible with {{ page.name }}</h2>
+  <div class="container my-5">
+    <h2 id="compatible-labels">Other compatible templates</h2>
     {% assign compatibles = page.compatibilities | split: ", " %}
     <ul class="list-unstyled list-compatible-labels">
       {% for compatible in compatibles %} {% assign path = compatible | replace: " ", "-" | prepend: '_labels/avery-' | append: "-template-google-docs.html" | downcase %} {% assign
@@ -114,3 +149,21 @@ layout: default
     "discussionUrl": "{{ page.document }}"
   }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Labels Templates",
+    "item": "https://example.com/labels/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Compatible with {{ page.name | json }}"
+  }]
+}
+</script>
+  

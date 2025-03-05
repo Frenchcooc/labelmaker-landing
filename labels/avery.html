@@ -1,0 +1,20 @@
+---
+pagination:
+  collection: labels
+  enabled: true
+  permalink: /labels/avery/page/:num/
+  sort_field: 
+---
+
+<div class="row">
+  <div class="d-none d-md-block col-xs-0 col-md-3">
+      <h3>Vendors</h3>
+      <ul>{% for vendor in site.vendors %}
+          <li>{{ vendor.title }}</li> 
+      {% endfor %}</ul>
+  </div>
+  <div class="col-xs-12 col-md-9" id="labels-list">
+  </div>
+</div>
+
+<script src="/assets/js/labels-catalog.js"></script>

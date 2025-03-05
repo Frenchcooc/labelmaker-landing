@@ -32,68 +32,20 @@ footer {
   background: #f8fbff;
 }
 
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* ----buttons---- */
 
-button,
 .btn {
-  margin: 1em 0 1em 0;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  border-radius: 8px;
-  font-weight: 400;
-  font-size: 1.2em;
-  color: white;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+  border-radius: 12px;
 }
 
 nav .btn {
-  margin: 0.2em;
-  font-size: 1em;
   font-weight: bold;
-}
-
-.btn-outline {
-  text-decoration: none;
-  text-align: center;
-  color: #007bff;
-  border: 2px solid;
-  border-radius: 8px;
-  border-color: #007bff;
-  background-color: white;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn-filled {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-weight: bolder;
-  border-radius: 6px;
-  background-color: #007bff;
-  outline: none;
-  cursor: pointer;
-}
-
-button:hover,
-.btn:hover {
-  cursor: pointer;
-}
-
-.btn:focus,
-.btn.focus {
-  box-shadow: none;
-}
-
-.btn-filled:hover {
-  color: #fff;
-  transform: scale(1.014);
-}
-
-.btn-outline:hover {
-  color: #007bff;
-  transform: scale(1.014);
 }
 
 /* --- Headings --- */
@@ -244,7 +196,11 @@ footer a:not(.btn):hover,
 }
 
 .pricing-card-cta {
-  padding: 0em 1em 0 1em;
+  padding: 1rem;
+}
+
+.pricing-card-cta .btn.btn-primary {
+  font-weight: 600;
 }
 
 .pricingcard .btn,

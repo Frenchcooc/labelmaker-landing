@@ -1,3 +1,6 @@
+plugins:
+  - jekyll-paginate-v2
+
 defaults:
   - scope:
       path: ""
@@ -8,3 +11,10 @@ collections:
   labels:
     output: true
     permalink: /labels/:title
+
+vendors:
+  - title: Most popular labels
+  - title: Avery
+  - title: SheetLabels.com
+  - title: OnlineLabels.com
+  - title: Herma

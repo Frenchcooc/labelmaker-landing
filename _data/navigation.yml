@@ -136,32 +136,24 @@ footer:
     links:
       templates:
         url: '/labels/'
-        en: 'Labels templates for Google Docs'
-        fr: "Modèles d'étiquettes pour Google Docs"
+        en: 'Most popular labels'
+        fr: "Modèles d'étiquettes populaires"
       avery5160:
-        url: '/labels/avery-5160-template-google-docs'
-        en: 'Template for Avery® 5160'
-        fr: 'Template pour Avery® 5160'
+        url: '/labels/'
+        en: 'Templates for Avery®'
+        fr: 'Templates pour Avery®'
       avery8160:
-        url: '/labels/avery-8160-template-google-docs'
-        en: 'Template for Avery® 8160'
-        fr: 'Template pour Avery® 8160'
+        url: '/labels/'
+        en: 'Templates for SheetLabels'
+        fr: 'Templates pour SheetLabels'
       avery5613:
-        url: '/labels/avery-5163-template-google-docs'
-        en: 'Template for Avery® 5163'
-        fr: 'Template pour Avery® 5163'
+        url: '/labels/'
+        en: 'Templates for OnlineLabels'
+        fr: 'Templates pour OnlineLabels'
       avery5162:
-        url: '/labels/avery-5162-template-google-docs'
-        en: 'Template for Avery® 5162'
-        fr: 'Template pour Avery® 5162'
-      avery3475:
-        url: '/labels/avery-3475-template-google-docs'
-        en: 'Template for Avery® 3475 (A4)'
-        fr: 'Template pour Avery® 3475 (A4)'
-      avery18660:
-        url: '/labels/avery-18660-template-google-docs'
-        en: 'Template for Avery® 18660'
-        fr: 'Template pour Avery® 18660'
+        url: '/labels/'
+        en: 'Templates for Herma'
+        fr: 'Templates pour Herma'
   legal:
     title:
       en: 'Legal'
