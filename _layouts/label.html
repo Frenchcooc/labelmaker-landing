@@ -10,6 +10,12 @@ layout: default
 {%- if page.path_to_docx -%}{%- assign downloadURLWord = '/assets/labels/docx/' | append: page.path_to_docx -%}{%- endif -%}
 
 <style>
+  @media screen and (min-width: 992px) {
+    h1 > span:first-child {
+      display: block;
+    }  
+  }
+
   .document-preview {
     border: 1px solid #eee;
     border-radius: 8px;
@@ -31,20 +37,20 @@ layout: default
         <a href="/labels/" itemprop="item">Templates</a>
       </li>
       <li>
-        <a class="font-weight-bold" href="/labels/">Compatible with {{ page.vendor }}</a>
+        <a class="font-weight-bold" href="/labels/">More from {{ page.vendor }}</a>
       </li>
     </ul>
   </nav>
   <div class="container text-center pb-3">
-    <h1 style="max-width: 800px; margin-left: auto; margin-right: auto">Template for Google Docs compatible with {{ page.name }}</h1>
-    <p class="col-md-9 mx-auto subheading">Find the most popular label templates for Google Docs, Word, PDF.</p>
+    <h1><span>Label Template</span> Compatible with {{ page.name }}</h1>
+    <p class="col-md-9 mx-auto subheading">Download the most popular label templates for Google Docs, Word, PDF.</p>
   </div>
 
   <div class="container text-center mb-5">
     <div class="document-preview">
       <div class="document-preview-heading">
         <div style="max-width: 50%">
-          <div class="text-ellipsis" style="font-weight: bold;">Labels template compatible with "{{ page.name }}"</div>
+          <div class="text-ellipsis" style="font-weight: bold;">Label template compatible with {{ page.name }}</div>
           <div class="text-muted">By labelsmerge.com</div>
         </div>
     
