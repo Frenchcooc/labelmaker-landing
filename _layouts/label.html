@@ -6,6 +6,8 @@ layout: default
 {%- assign downloadURLGoogleDocs = "https://docs.google.com/document/copy?&id=" | append: documentId -%}
 {%- assign downloadURLPDF = "https://docs.google.com/document/export?id=" | append: documentId | append: "&format=pdf&includes_info_params=true" -%}
 {%- assign downloadURLWord = "https://docs.google.com/document/export?id=" | append: documentId | append: "&format=docx&includes_info_params=true" -%}
+{%- if page.path_to_pdf -%}{%- assign downloadURLPDF = '/assets/labels/pdf/' | append: page.path_to_pdf -%}{%- endif -%}
+{%- if page.path_to_docx -%}{%- assign downloadURLWord = '/assets/labels/docx/' | append: page.path_to_docx -%}{%- endif -%}
 
 <style>
   .document-preview {
