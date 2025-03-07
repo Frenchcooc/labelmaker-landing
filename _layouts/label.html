@@ -145,9 +145,11 @@ layout: default
   {
     "@context": "https://schema.org",
     "@type": "DigitalDocument",
+    "isAccessibleForFree": true,
     "name": "{{ page.name }}",
-    "creator": "Labelmaker",
-    "url": "{{ page.document }}",
+    "creator": "Labelmaker",{%- if page.path_to_img -%}
+    "image": "https://labelsmerge.com/assets/labels/images/{{ page.path_to_img }}",
+    {%- endif -%}"url": "{{ page.document }}",
     "discussionUrl": "{{ page.document }}"
   }
 </script>
