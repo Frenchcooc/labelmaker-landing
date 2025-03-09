@@ -29,6 +29,16 @@ layout: default
     margin: 1rem;
     text-align: left;
   }
+
+  @media screen and (max-width: 540px) {
+    .document-preview-heading {
+      justify-content: center;
+    }
+
+    .document-preview-heading > div:first-child {
+      display: none;
+    }
+  }
 </style>
 <section>
   <nav aria-label="breadcrumb">
@@ -72,7 +82,7 @@ layout: default
   <div class="container text-center my-5">
     <h2 class="mb-5">Download this template in all formats</h2>
     <div class="row">
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-xs-6 col-lg-4 py-3">
         <div class="mb-3">
           <img src="/assets/images/elements/microsoft-word-logo.png" height="64" alt="Microsoft Word Logo">
         </div>
@@ -80,7 +90,7 @@ layout: default
         <p style="margin: 0.5rem auto; font-size: 0.85rem; max-width: 60%">To create labels in Microsoft Word 2007 or later</p>
         <a href="{{ downloadURLWord }}" target="_blank" class="btn btn-primary mt-1" style="width: 80%">Download .DOCX</a>
       </div>
-      <div class="col-xs-6 col-lg-4">
+      <div class="col-xs-6 col-lg-4 py-3">
         <div class="mb-3">
           <img src="/assets/images/elements/pdf-logo.png" height="64" alt="PDF Logo">
         </div>
@@ -88,7 +98,7 @@ layout: default
         <p style="margin: 0.5rem auto; font-size: 0.85rem; max-width: 60%">To create labels with your printer at any time</p>
         <a href="{{ downloadURLPDF }}" target="_blank" class="btn btn-primary mt-1" style="width: 80%">Download .PDF</a>
       </div>
-      <div class="col-xs-6 col-lg-4">
+      <div class="col-xs-6 col-lg-4 py-3">
         <div class="mb-3">
           <img src="/assets/images/elements/google-docs-logo.png" height="64" alt="Google Docs Logo">
         </div>
