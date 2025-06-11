@@ -6,7 +6,7 @@
         <span class="font-weight-bold">{{ site.data.navigation.footer-description[page.lang]title }}</span>
         <small class="d-block mb-3">{{ site.data.navigation.footer-description[page.lang]disclaimer }}</small>
       </div>
-      <div class="col-xs-12 d-flex flex-wrap flex-lg-nowrap">
+      <div class="col-xs-12 d-flex flex-wrap flex-lg-nowrap justify-content-between">
         {% for nav in site.data.navigation.footer %}
         <div>
           <h4>{{ nav[1]title[page.lang] }}</h4>
