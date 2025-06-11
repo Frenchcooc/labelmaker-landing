@@ -33,47 +33,6 @@ footer-description:
     disclaimer: "Labelmaker est un module complémentaire pour Google Docs et Google Sheets. Tous les noms de produits et de sociétés sont des marques de commerce™ ou des marques déposées® de leurs détenteurs respectifs. Leur utilisation sur ce site Web n'implique aucune affiliation ou approbation de leur part. Labelmaker n'est pas affilié aux fabricants d'étiquettes."
 
 footer:
-  company:
-    title:
-      en: 'Company'
-      fr: 'Société'
-    links:
-      contact:
-        url: '/contact'
-        en: 'Contact us'
-        fr: 'Nous contacter'
-      pricing:
-        url: '/pricing'
-        en: 'Pricing'
-        fr: 'Prix'
-      about:
-        url: '/about'
-        en: 'About us'
-        fr: 'A propos'
-      lang:
-        en: 'EN / FR'
-        fr: 'FR / EN'
-  ressources:
-    title:
-      en: 'Resources'
-      fr: 'Ressources'
-    links:
-      guides:
-        url: '/guides/'
-        en: 'Guides & tutorial'
-        fr: 'Guides'
-      forum:
-        url: 'https://groups.google.com/forum/#!forum/labelmaker'
-        en: 'Forum'
-        fr: 'Forum'
-      avery:
-        url: '/avery-labels-mail-merge'
-        en: 'Avery Labels® Mail Merge'
-        fr: "Publipostage d'étiquettes Avery Labels®"
-      mailmerge:
-        url: 'https://mailmeteor.com/'
-        en: 'Mail Merge for Gmail'
-        fr: "Publipostage d'emails avec Gmail"
   howto:
     title:
       en: 'How to'
@@ -107,28 +66,6 @@ footer:
         url: '/guides/how-to-print-envelope-google-docs'
         en: 'Print an envelope in Google Docs'
         fr: 'Imprimer une enveloppe dans Google Docs'
-  special-occasions:
-    title:
-      en: 'Special occasions'
-      fr: 'Occasions spéciales'
-    links:
-      how-to-make-christmas-labels-google-docs:
-        url: '/guides/how-to-make-christmas-labels-google-docs'
-        en: 'Christmas labels'
-        fr: 'Étiquettes de Noël'
-      how-to-make-wedding-labels-google-docs:
-        url: '/guides/how-to-make-wedding-labels-google-docs'
-        en: 'Wedding labels'
-        fr: 'Étiquettes de mariage'
-      how-to-make-thanksgiving-labels-google-docs:
-        url: '/guides/how-to-make-thanksgiving-labels-google-docs'
-        en: 'Thanksgiving labels'
-      how-to-make-black-friday-labels-google-docs:
-        url: '/guides/how-to-make-black-friday-labels-google-docs'
-        en: 'Black Friday labels'
-      how-to-make-holiday-labels-google-docs:
-        url: '/guides/how-to-make-holiday-labels-google-docs'
-        en: 'Holiday labels'
   templates:
     title:
       en: 'Templates'
@@ -154,11 +91,66 @@ footer:
         url: '/labels/'
         en: 'Templates for Herma'
         fr: 'Templates pour Herma'
-  legal:
+  special-occasions:
     title:
-      en: 'Legal'
-      fr: 'Légal'
+      en: 'Design ideas'
+      fr: 'Idées de design'
     links:
+      how-to-make-christmas-labels-google-docs:
+        url: '/guides/how-to-make-christmas-labels-google-docs'
+        en: 'Christmas labels'
+        fr: 'Étiquettes de Noël'
+      how-to-make-wedding-labels-google-docs:
+        url: '/guides/how-to-make-wedding-labels-google-docs'
+        en: 'Wedding labels'
+        fr: 'Étiquettes de mariage'
+      how-to-make-thanksgiving-labels-google-docs:
+        url: '/guides/how-to-make-thanksgiving-labels-google-docs'
+        en: 'Thanksgiving labels'
+      how-to-make-black-friday-labels-google-docs:
+        url: '/guides/how-to-make-black-friday-labels-google-docs'
+        en: 'Black Friday labels'
+      how-to-make-holiday-labels-google-docs:
+        url: '/guides/how-to-make-holiday-labels-google-docs'
+        en: 'Holiday labels'
+  ressources:
+    title:
+      en: 'Resources'
+      fr: 'Ressources'
+    links:
+      guides:
+        url: '/guides/'
+        en: 'Guides & tutorial'
+        fr: 'Guides'
+      community:
+        url: 'https://groups.google.com/forum/#!forum/labelmaker'
+        en: 'Community'
+        fr: 'Communauté'
+      contact:
+        url: '/contact'
+        en: 'Support'
+        fr: 'Support'
+      avery:
+        url: '/avery-labels-mail-merge'
+        en: 'Avery Labels® Mail Merge'
+        fr: "Publipostage d'étiquettes Avery Labels®"
+      mailmerge:
+        url: 'https://mailmeteor.com/'
+        en: 'Mail Merge for Gmail'
+        fr: "Publipostage d'emails avec Gmail"
+  company:
+    title:
+      en: 'Company'
+      fr: 'Société'
+    links:
+      pricing:
+        url: '/pricing'
+        en: 'Pricing'
+        fr: 'Prix'
+      about:
+        url: '/about'
+        en: 'About us'
+        fr: 'A propos'
       privacy:
         url: '/privacy'
         en: 'Privacy'
@@ -167,3 +159,6 @@ footer:
         url: '/terms'
         en: 'Terms'
         fr: 'Mentions Légales'
+      lang:
+        en: 'EN / FR'
+        fr: 'FR / EN'

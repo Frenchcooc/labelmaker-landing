@@ -8,30 +8,39 @@
       </div>
       <div class="col-xs-12 d-flex flex-wrap flex-lg-nowrap">
         {% for nav in site.data.navigation.footer %}
-        <ul class="list-unstyled mr-4">
-          <li>
-            <span class="font-weight-bold">{{ nav[1]title[page.lang] }}</span>
-          </li>
-          {% assign footerlinks = nav[1].links %} {% for link in footerlinks %} {% if link[1][page.lang] == 'EN / FR' %}
-          <li><a href="/">EN</a> / <a href="/fr/">FR</a></li>
-          {% elsif link[1][page.lang] == 'FR / EN' %}
-          <li><a href="/fr/">FR</a> / <a href="/">EN</a></li>
-          {% elsif link[0] == 'mailmerge' %}
-          <li>
-            <a href="https://mailmeteor.com/"
-              >Mail Merge Gmail
-              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px">
-                <path
-                  d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"
-                />
-              </svg>
-            </a>
+        <div>
+          <h4>{{ nav[1]title[page.lang] }}</h4>
+          <ul class="list-unstyled mr-4">
+            {% assign footerlinks = nav[1].links %}{% for link in footerlinks %}{% if link[1][page.lang] == 'EN / FR' %}
+            <li><a href="/">EN</a> / <a href="/fr/">FR</a></li>
+            {% elsif link[1][page.lang] == 'FR / EN' %}
+            <li><a href="/fr/">FR</a> / <a href="/">EN</a></li>
+            {% elsif link[0] == 'mailmerge' %}
+            <li>
+              <a href="https://mailmeteor.com/"
+                >Mail Merge Gmail
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px">
+                  <path
+                    d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://workspace.google.com/marketplace/app/email_verifier_for_google_sheets/473712035382"
+                >Email Verifier
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px">
+                  <path
+                    d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"
+                  />
+                </svg>
+              </a>
+            </li>
             {% else %}
-          </li>
-
-          <li><a href="{{ link[1].url }}">{{ link[1][page.lang] }}</a></li>
-          {% endif %} {% endfor %}
-        </ul>
+            <li><a href="{{ link[1].url }}">{{ link[1][page.lang] }}</a></li>
+            {% endif %}{% endfor %}
+          </ul>
+        </div>
         {% endfor %}
       </div>
     </div>
