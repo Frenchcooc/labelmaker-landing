@@ -32,41 +32,41 @@ og_url: https://labelsmerge.com/labels/
         <section>
             <h2 id="avery">Templates compatible with <a href="https://www.avery.com/">Avery®</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
-                {% for label in site.labels %}
-                    {% if label.vendor == "Avery" %}
+                {% assign averylabels = site.labels | where: "vendor", "Avery" %}
+                {% for label in averylabels limit: 20 %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
-                    {% endif %}
                 {% endfor %}
+                <li>And many more...</li>
             </ul>
         </section>
         <section>
             <h2 id="sheetlabels-com">Templates compatible with <a href="https://www.sheetlabels.com/">SheetLabels.com</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
-                {% for label in site.labels %}
-                    {% if label.vendor == "SheetLabels.com" %}
+                {% assign sheetlabels = site.labels | where: "vendor", "SheetLabels.com" %}
+                {% for label in sheetlabels limit: 20 %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
-                    {% endif %}
                 {% endfor %}
+                <li>And many more...</li>
             </ul>
         </section>
         <section>
             <h2 id="onlinelabels-com">Templates compatible with <a href="https://www.onlinelabels.com/">OnlineLabels.com</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
-                {% for label in site.labels %}
-                    {% if label.vendor == "OnlineLabels.com" %}
+                {% assign onlinelabels = site.labels | where: "vendor", "OnlineLabels.com" %}
+                {% for label in onlinelabels limit: 20 %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
-                    {% endif %}
                 {% endfor %}
+                <li>And many more...</li>
             </ul>
         </section>
         <section>
             <h2 id="herma">Templates compatible with <a href="https://www.herma.com/">Herma</a></h2>
             <ul class="list-unstyled list-columns" style="line-height:200%">
-                {% for label in site.labels %}
-                    {% if label.vendor == "Herma" %}
+                {% assign hermalabels = site.labels | where: "vendor", "Herma" %}
+                {% for label in hermalabels limit: 20 %}
                     <li><a href="{{label.slug}}">{{ label.name }}</a></li>
-                    {% endif %}
                 {% endfor %}
+                <li>And many more...</li>
             </ul>
         </section>
     </div>

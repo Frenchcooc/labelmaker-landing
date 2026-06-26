@@ -75,20 +75,20 @@ footer:
         url: '/labels/'
         en: 'Most popular labels'
         fr: "Modèles d'étiquettes populaires"
-      avery5160:
-        url: '/labels/'
+      vendor-avery:
+        url: '/labels/#avery'
         en: 'Templates for Avery®'
         fr: 'Templates pour Avery®'
-      avery8160:
-        url: '/labels/'
+      vendor-sheetlabels:
+        url: '/labels/#sheetlabels-com'
         en: 'Templates for SheetLabels'
         fr: 'Templates pour SheetLabels'
-      avery5613:
-        url: '/labels/'
+      vendor-onlinelabels:
+        url: '/labels/#onlinelabels-com'
         en: 'Templates for OnlineLabels'
         fr: 'Templates pour OnlineLabels'
-      avery5162:
-        url: '/labels/'
+      vendor-herma:
+        url: '/labels/#herma'
         en: 'Templates for Herma'
         fr: 'Templates pour Herma'
   special-occasions:
@@ -130,14 +130,6 @@ footer:
         url: '/contact'
         en: 'Support'
         fr: 'Support'
-      avery:
-        url: '/avery-labels-mail-merge'
-        en: 'Avery Labels® Mail Merge'
-        fr: "Publipostage d'étiquettes Avery Labels®"
-      mailmerge:
-        url: 'https://mailmeteor.com/'
-        en: 'Mail Merge for Gmail'
-        fr: "Publipostage d'emails avec Gmail"
   company:
     title:
       en: 'Company'
